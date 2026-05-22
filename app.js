@@ -127,6 +127,19 @@ const t = {
     app8Link: "Apple Support",
     app9t: "9. Änderungen",
     app9d: "Wir können diese Erklärung bei Bedarf anpassen. Die aktuelle Version ist unter der in App Store Connect angegebenen URL abrufbar.",
+    metaTitleIndex: "R-K8 — Neon-Arcade-Shooter",
+    metaDescIndex:
+      "R-K8 — Neon-Arcade-Shooter für iOS. Wellen, Power-Ups, Tägliche Missionen, Veteran-Ränge und Synthwave-Design.",
+    metaTitleSupport: "Support & Hilfe — R-K8",
+    metaDescSupport: "Support für R-K8: Kontakt, Käufe wiederherstellen und Hilfe bei technischen Problemen.",
+    metaTitleImprint: "Impressum — R-K8",
+    metaDescImprint: "Impressum und Anbieterkennzeichnung der R-K8-Website.",
+    metaTitlePrivacy: "Datenschutz — R-K8",
+    metaDescPrivacy: "Datenschutzerklärung der R-K8-Website: Hosting, Cookies, Kontakt und Betroffenenrechte.",
+    metaTitleAppPrivacy: "App-Datenschutz — R-K8",
+    metaDescAppPrivacy: "Datenschutz der iOS-App R-K8: lokale Speicherung, In-App-Käufe und keine Tracking-Dienste.",
+    metaTitleAccess: "Barrierefreiheit — R-K8",
+    metaDescAccess: "Barrierefreiheit der R-K8-Website: Maßnahmen, Grenzen und Kontakt für Feedback.",
   },
   en: {
     langLabel: "Language", skip: "Skip to content", navFeatures: "Features", navHow: "How to play", navEu: "EU compliance", heroEyebrow: "Synthwave • Arcade • Skill", heroWelcome: "Welcome to", heroTitle: "R-K8: Fast-paced neon arcade gameplay", heroLead: "Dodge enemy waves, earn credits, unlock upgrades, and chase your high score in a futuristic space style.", btnGuide: "How to play", btnFeatures: "View features", coreLoop: "Core loop", loop1: "Start and survive waves", loop2: "Earn credits and buy upgrades", loop3: "Optimize your build and push high score", featuresTitle: "Main features", howTitle: "How to play", euTitle: "EU compliance focus", legal: "Legal", imprint: "Imprint", privacy: "Privacy", access: "Accessibility", backHome: "Back to home", imprintLaw: "Information according to 5 TMG", contact: "Contact", responsible: "Responsible for content",
@@ -214,6 +227,19 @@ const t = {
     app8Link: "Apple Support",
     app9t: "9. Changes",
     app9d: "We may update this policy when needed. The current version is available at the URL listed in App Store Connect.",
+    metaTitleIndex: "R-K8 — Neon Arcade Shooter",
+    metaDescIndex:
+      "R-K8 — neon arcade shooter for iOS. Waves, power-ups, daily missions, veteran ranks and synthwave style.",
+    metaTitleSupport: "Support & help — R-K8",
+    metaDescSupport: "R-K8 support: contact, restore purchases and help with technical issues.",
+    metaTitleImprint: "Imprint — R-K8",
+    metaDescImprint: "Imprint and provider information for the R-K8 website.",
+    metaTitlePrivacy: "Privacy — R-K8",
+    metaDescPrivacy: "Privacy policy for the R-K8 website: hosting, cookies, contact and your rights.",
+    metaTitleAppPrivacy: "App privacy — R-K8",
+    metaDescAppPrivacy: "Privacy for the R-K8 iOS app: on-device storage, in-app purchases and no tracking.",
+    metaTitleAccess: "Accessibility — R-K8",
+    metaDescAccess: "Accessibility on the R-K8 website: measures, limitations and feedback contact.",
   },
   es: {
     langLabel: "Idioma", skip: "Saltar al contenido", navFeatures: "Funciones", navHow: "Cómo jugar", navEu: "Conformidad UE", heroEyebrow: "Synthwave • Arcade • Habilidad", heroWelcome: "Bienvenido a", heroTitle: "R-K8: jugabilidad arcade neón intensa", heroLead: "Esquiva oleadas enemigas, gana créditos, desbloquea mejoras y supera tu récord.", btnGuide: "Guía de juego", btnFeatures: "Ver funciones", coreLoop: "Bucle principal", loop1: "Comienza y sobrevive oleadas", loop2: "Gana créditos y compra mejoras", loop3: "Optimiza tu build y sube récord", featuresTitle: "Funciones principales", howTitle: "Cómo jugar", euTitle: "Conformidad UE", legal: "Legal", imprint: "Aviso legal", privacy: "Privacidad", access: "Accesibilidad", backHome: "Volver al inicio", imprintLaw: "Información según 5 TMG", contact: "Contacto", responsible: "Responsable del contenido"
@@ -554,7 +580,8 @@ const extendedContent = {
     featLeaderboardD: "Bestleistungen werden auf dem Gerät gespeichert — mit optionalem Namen. Vergleiche deine Top-Runs direkt im Startmenü, ohne Account oder Cloud.",
     featBossT: "Endbosse & Wellen-Belohnungen",
     featBossD: "Endbosse greifen mit Ram-Angriffen und Energiekugeln an. Jede 10. Welle bringt Bonus-Münzen mit Gold-Overlay-Feedback — ein klarer Meilenstein in jeder Session.",
-    tagGuide: "Quick Start",
+    tagGuide: "Schnellstart",
+    s1t: "1. Steuerung & Schwierigkeit wählen",
     supportBanner: "Fragen zu Käufen, „Käufe wiederherstellen“ oder technischen Problemen?",
     supportLink: "Support & Hilfe",
     supportNav: "Support",
@@ -658,19 +685,43 @@ for (const [lang, copy] of Object.entries(extendedContent)) {
   t[lang] = { ...t[lang], ...copy };
 }
 
+const localePacks = typeof window !== "undefined" && window.__localePacks ? window.__localePacks : {};
+for (const [lang, copy] of Object.entries(localePacks)) {
+  t[lang] = { ...t[lang], ...copy };
+}
+
+function localeFallbackChain(lang) {
+  if (lang === "mx") return ["mx", "es", "en", "de"];
+  if (lang === "de" || lang === "en") return [lang, "de", "en"];
+  return [lang, "en", "de"];
+}
+
+function resolveCopy(lang) {
+  const merged = {};
+  for (const code of [...localeFallbackChain(lang)].reverse()) {
+    Object.assign(merged, t[code] || {}, fullContent[code] || {}, extendedContent[code] || {}, localePacks[code] || {});
+  }
+  return merged;
+}
+
 function translatePage(lang) {
-  const copy = t[lang] || t.de;
+  const copy = resolveCopy(lang);
   document.documentElement.lang = lang === "mx" ? "es-MX" : lang;
   document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const key = node.getAttribute("data-i18n");
-    const value = copy[key] ?? t.en[key] ?? t.de[key];
+    const value = copy[key];
     if (value) node.textContent = value;
   });
   document.querySelectorAll("[data-i18n-placeholder]").forEach((node) => {
     const key = node.getAttribute("data-i18n-placeholder");
-    const value = copy[key] ?? t.en[key] ?? t.de[key];
+    const value = copy[key];
     if (value) node.setAttribute("placeholder", value);
+  });
+  document.querySelectorAll("[data-i18n-meta]").forEach((node) => {
+    const key = node.getAttribute("data-i18n-meta");
+    const value = copy[key];
+    if (value) node.setAttribute("content", value);
   });
 }
 
