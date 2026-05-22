@@ -176,8 +176,13 @@ body::before {
   align-items: center;
 }
 
+.hero-grid > * {
+  min-width: 0;
+}
+
 .hero-visual {
   position: relative;
+  width: 100%;
   min-height: 280px;
   border-radius: 1rem;
   overflow: hidden;
@@ -194,7 +199,10 @@ body::before {
 .hero-visual::before {
   content: "";
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 0;
   background: repeating-linear-gradient(
     90deg,
@@ -203,31 +211,44 @@ body::before {
     rgba(5, 216, 232, 0.14) 28px,
     rgba(5, 216, 232, 0.14) 29px
   );
+  -webkit-transform: perspective(320px) rotateX(58deg) scale(1.6);
   transform: perspective(320px) rotateX(58deg) scale(1.6);
+  -webkit-transform-origin: center 85%;
   transform-origin: center 85%;
   opacity: 0.7;
   pointer-events: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .hero-sprites {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   z-index: 1;
   pointer-events: none;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .hero-enemy {
   position: absolute;
   display: block;
   height: auto;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  image-rendering: -webkit-optimize-contrast;
   image-rendering: pixelated;
   image-rendering: crisp-edges;
   user-select: none;
   -webkit-user-drag: none;
-  rotate: 180deg;
-  filter:
-    drop-shadow(0 0 8px rgba(5, 216, 232, 0.45))
+  -webkit-filter: drop-shadow(0 0 8px rgba(5, 216, 232, 0.45))
     drop-shadow(0 0 14px rgba(255, 41, 117, 0.28));
+  filter: drop-shadow(0 0 8px rgba(5, 216, 232, 0.45))
+    drop-shadow(0 0 14px rgba(255, 41, 117, 0.28));
+  -webkit-animation: enemyDrift 4.2s ease-in-out infinite;
   animation: enemyDrift 4.2s ease-in-out infinite;
 }
 
@@ -256,6 +277,7 @@ body::before {
   position: absolute;
   left: 50%;
   top: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 3;
   display: flex;
@@ -264,6 +286,8 @@ body::before {
   gap: 0.2rem;
   text-align: center;
   pointer-events: none;
+  width: max-content;
+  max-width: 92%;
 }
 
 .hero-welcome {
@@ -278,9 +302,10 @@ body::before {
   white-space: nowrap;
 }
 
-/* Synthwave-Chrom „R-K8“ wie im Startbildschirm (MenuView.startScreenGameTitleChrome) */
+/* Synthwave-Chrom „R-K8“ — kein filter auf dem Container (Safari + background-clip:text) */
 .hero-game-title {
   position: relative;
+  display: inline-block;
   margin: 0;
   font-family: var(--font-display);
   font-size: clamp(2.4rem, 9vw, 3.35rem);
@@ -289,10 +314,6 @@ body::before {
   line-height: 1;
   white-space: nowrap;
   pointer-events: none;
-  filter:
-    drop-shadow(0 -3px 12px rgba(5, 216, 232, 0.52))
-    drop-shadow(0 5px 14px rgba(255, 41, 117, 0.38))
-    drop-shadow(0 2px 5px rgba(0, 0, 0, 0.62));
 }
 
 .hero-game-title__outline,
@@ -302,7 +323,10 @@ body::before {
 
 .hero-game-title__outline {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   color: rgba(224, 245, 255, 0.92);
   text-shadow:
     -1px -1px 0 rgba(224, 245, 255, 0.92),
@@ -330,12 +354,41 @@ body::before {
   );
   -webkit-background-clip: text;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: transparent;
+  text-shadow:
+    0 -2px 10px rgba(5, 216, 232, 0.45),
+    0 4px 12px rgba(255, 41, 117, 0.35),
+    0 2px 4px rgba(0, 0, 0, 0.65);
+}
+
+@-webkit-keyframes enemyDrift {
+  0%, 100% {
+    -webkit-transform: rotate(180deg) translateY(0);
+    transform: rotate(180deg) translateY(0);
+  }
+  50% {
+    -webkit-transform: rotate(180deg) translateY(10px);
+    transform: rotate(180deg) translateY(10px);
+  }
 }
 
 @keyframes enemyDrift {
-  0%, 100% { transform: rotate(180deg) translateY(0); }
-  50% { transform: rotate(180deg) translateY(10px); }
+  0%, 100% {
+    -webkit-transform: rotate(180deg) translateY(0);
+    transform: rotate(180deg) translateY(0);
+  }
+  50% {
+    -webkit-transform: rotate(180deg) translateY(10px);
+    transform: rotate(180deg) translateY(10px);
+  }
+}
+
+/* Safari: 3D-Gitter-Fallback wenn Perspektive clipped wird */
+@supports (-webkit-touch-callout: none) {
+  .hero-visual {
+    isolation: isolate;
+  }
 }
 
 .eyebrow {
