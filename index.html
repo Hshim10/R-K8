@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="R-K8 ist ein neon-inspiriertes Arcade-Shooter-Spiel. Erfahre Features, Spielablauf und Steuerung."
+    />
+    <meta name="color-scheme" content="dark light" />
+    <title>R-K8 - Neon Arcade Shooter</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content" data-i18n="skip">Zum Inhalt springen</a>
+
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="./index.html" aria-label="Startseite">
+          <span class="brand-mark">R-K8</span>
+        </a>
+        <label class="lang-wrap">
+          <span data-i18n="langLabel">Sprache</span>
+          <select id="language-picker" aria-label="Sprache"></select>
+        </label>
+        <ul class="nav-links">
+          <li><a href="#features" data-i18n="navFeatures">Features</a></li>
+          <li><a href="#how-to-play" data-i18n="navHow">How to play</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow" data-i18n="heroEyebrow">Synthwave • Arcade • Skill</p>
+            <h1 data-i18n="heroTitle">R-K8: Reaktionsstarkes Neon-Arcade Gameplay</h1>
+            <p class="lead" data-i18n="heroLead">
+              Weiche Gegnerwellen aus, sammle Credits, schalte Upgrades frei und
+              jage den Highscore in einem futuristischen Space-Look.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#how-to-play" data-i18n="btnGuide">Spielanleitung</a>
+              <a class="btn btn-secondary" href="#features" data-i18n="btnFeatures">Features ansehen</a>
+            </div>
+          </div>
+          <aside class="hero-panel" aria-label="Spielübersicht">
+            <h2 data-i18n="coreLoop">Core Loop</h2>
+            <ol>
+              <li data-i18n="loop1">Starten und Wellen überleben</li>
+              <li data-i18n="loop2">Credits verdienen und Upgrades kaufen</li>
+              <li data-i18n="loop3">Build optimieren und Highscore pushen</li>
+            </ol>
+          </aside>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <h2 data-i18n="featuresTitle">Hauptfeatures</h2>
+          <div class="cards">
+            <article class="card">
+              <h3 data-i18n="f1t">Dynamische Arcade-Action</h3>
+              <p data-i18n="f1d">
+                Schnelles Gameplay mit steigender Schwierigkeit und klaren
+                Rückmeldungen bei Treffern, Explosionen und Combos.
+              </p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="f2t">Power-Ups & Build-Strategie</h3>
+              <p data-i18n="f2d">
+                Schalte Upgrades frei (z. B. Mehrfachschuss, Schutzsysteme) und
+                kombiniere sie passend zu deinem Spielstil.
+              </p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="f3t">Leaderboard & Fortschritt</h3>
+              <p data-i18n="f3d">
+                Speichere Scores lokal, verfolge deine Bestleistungen und arbeite
+                dich konstant zu besseren Runs hoch.
+              </p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="f4t">Synthwave-Design</h3>
+              <p data-i18n="f4d">
+                Das visuelle Konzept basiert auf Neon-Cyan, Magenta und dunklen
+                Space-Gradienten - passend zum Ingame-Look.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-to-play" class="section alt">
+        <div class="container">
+          <h2 data-i18n="howTitle">How to play</h2>
+          <div class="steps">
+            <article class="step">
+              <h3 data-i18n="s1t">1. Steuerung wählen</h3>
+              <p data-i18n="s1d">
+                Wähle im Menü zwischen Tap- und Swipe-Steuerung, je nachdem was
+                dir präziser liegt.
+              </p>
+            </article>
+            <article class="step">
+              <h3 data-i18n="s2t">2. Positionieren & ausweichen</h3>
+              <p data-i18n="s2d">
+                Bleibe in Bewegung, lies Gegnerbewegungen früh und halte sichere
+                Fluchtwege offen.
+              </p>
+            </article>
+            <article class="step">
+              <h3 data-i18n="s3t">3. Credits investieren</h3>
+              <p data-i18n="s3d">
+                Nutze erspielte Credits gezielt für Upgrades und aktiviere die
+                stärksten Kombinationen für längere Runs.
+              </p>
+            </article>
+            <article class="step">
+              <h3 data-i18n="s4t">4. Highscore verbessern</h3>
+              <p data-i18n="s4d">
+                Lerne Spawn-Muster, minimiere Treffer und optimiere deinen Build
+                Runde für Runde.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>© <span id="year"></span> R-K8</p>
+        <nav aria-label="Rechtliches">
+          <a href="./impressum.html" data-i18n="imprint">Impressum</a>
+          <a href="./datenschutz.html" data-i18n="privacy">Datenschutz</a>
+          <a href="./barrierefreiheit.html" data-i18n="access">Barrierefreiheit</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

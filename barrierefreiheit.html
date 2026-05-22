@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barrierefreiheit - R-K8</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <a class="brand" href="./index.html">
+          <span class="brand-mark">R-K8</span>
+        </a>
+        <label class="lang-wrap">
+          <span data-i18n="langLabel">Sprache</span>
+          <select id="language-picker" aria-label="Sprache"></select>
+        </label>
+      </nav>
+    </header>
+
+    <main class="container legal-main">
+      <h1 data-i18n="access">Barrierefreiheit</h1>
+      <div class="legal-grid">
+        <section class="legal-card">
+          <h2 data-i18n="a1t">Unser Anspruch</h2>
+          <p data-i18n="a1d">
+            Diese Website ist so gestaltet, dass sie möglichst wahrnehmbar,
+            bedienbar, verständlich und robust ist. Das betrifft besonders
+            Struktur, Kontrast und Bedienung ohne Maus.
+          </p>
+        </section>
+
+        <section class="legal-card">
+          <h2 data-i18n="a2t">Umgesetzte Maßnahmen</h2>
+          <ul>
+            <li data-i18n="a2l1">Semantische HTML-Struktur mit klaren Ueberschriften</li>
+            <li data-i18n="a2l2">Tastaturfokus für interaktive Elemente</li>
+            <li data-i18n="a2l3">Responsives Layout für Mobilgeräte und Desktop</li>
+            <li data-i18n="a2l4">Verzicht auf auto-playende Audioelemente</li>
+          </ul>
+        </section>
+
+        <section class="legal-card">
+          <h2 data-i18n="a3t">Bekannte Einschränkungen</h2>
+          <p data-i18n="a3d">
+            Einzelne visuelle Effekte (Neon-Glows, Glas-Effekte) können je nach
+            Endgerät variieren. Wenn du auf Probleme stößt, melde dich bitte mit
+            Gerät, Browser und kurzer Beschreibung.
+          </p>
+        </section>
+
+        <section class="legal-card">
+          <h2 data-i18n="a4t">Feedback und Kontakt</h2>
+          <p>
+            E-Mail: accessibility@example.com<br />
+            <span data-i18n="a4d">Wir prüfen gemeldete Barrieren zeitnah und verbessern die Seite fortlaufend.</span>
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p><a href="./index.html" data-i18n="backHome">Zurück zur Startseite</a></p>
+        <nav aria-label="Rechtliches">
+          <a href="./impressum.html" data-i18n="imprint">Impressum</a>
+          <a href="./datenschutz.html" data-i18n="privacy">Datenschutz</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
