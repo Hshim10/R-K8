@@ -23,6 +23,7 @@ const t = {
     navHow: "How to play",
     navEu: "EU-Konformität",
     heroEyebrow: "Synthwave • Arcade • Skill",
+    heroWelcome: "Willkommen bei",
     heroTitle: "R-K8: Reaktionsstarkes Neon-Arcade Gameplay",
     heroLead: "Weiche Gegnerwellen aus, sammle Credits, schalte Upgrades frei und jage den Highscore im futuristischen Space-Look.",
     btnGuide: "Spielanleitung",
@@ -79,9 +80,56 @@ const t = {
     a3d: "Einzelne visuelle Effekte (Neon-Glows, Glas-Effekte) können je nach Endgerät variieren. Wenn du auf Probleme stößt, melde dich bitte mit Gerät, Browser und kurzer Beschreibung.",
     a4t: "Feedback und Kontakt",
     a4d: "Wir prüfen gemeldete Barrieren zeitnah und verbessern die Seite fortlaufend.",
+    supportTitle: "Support & Hilfe",
+    supContactT: "Kontakt",
+    supContactD:
+      "Bei Fragen zu R-K8, In-App-Käufen oder technischen Problemen erreichst du uns per E-Mail. Wir antworten in der Regel innerhalb weniger Werktage.",
+    supRestoreT: "Käufe wiederherstellen",
+    supRestoreD:
+      "Im Spiel: Menü → „…“ → „Käufe wiederherstellen“. Nutze dieselbe Apple-ID wie beim ursprünglichen Kauf. Dauerhafte Freischaltungen (z. B. alle Power-Ups oder alle Musiktracks) werden dabei wiederhergestellt.",
+    supRestoreNote:
+      "Münz-Pakete sind verbrauchbare In-App-Käufe; Apple liefert abgeschlossene Käufe in der Regel nicht erneut. Bei Abrechnungsfragen wende dich an den Apple-Kauf-Support.",
+    supTechT: "Technische Probleme",
+    supTechD:
+      "Bitte nenne in deiner E-Mail: Gerätemodell, iOS-Version, kurze Beschreibung des Problems und ob es nach einem App-Update aufgetreten ist. Screenshots helfen bei der Fehlersuche.",
+    supLegalT: "Weitere Informationen",
+    appPrivacyTitle: "App-Datenschutz",
+    appPrivacyMeta: "Stand: Mai 2026 · Entwickler: Hashim Acra · Kontakt:",
+    app1t: "1. Verantwortlicher",
+    app1d:
+      "Verantwortlich für die App R-K8 (Bundle-ID: com.hashim.gamebase1) ist der Entwickler Hashim Acra. Bei Fragen zum Datenschutz erreichst du uns unter der oben genannten E-Mail-Adresse.",
+    app2t: "2. Kurzfassung",
+    app2l1: "Keine Werbung, kein App-Tracking (ATT), keine Abfrage der Werbe-ID (IDFA).",
+    app2l2: "Keine Erstellung von Nutzerkonten und keine Übermittlung von Spielständen an unsere Server.",
+    app2l3: "Spieldaten werden nur lokal auf deinem Gerät gespeichert (z. B. Coins, Highscores, Einstellungen).",
+    app2l4: "Optionale In-App-Käufe werden ausschließlich von Apple abgewickelt.",
+    app3t: "3. Welche Daten verarbeiten wir?",
+    app3Intro: "Lokal auf dem Gerät (UserDefaults / App-Speicher):",
+    app3l1: "Spielstand und Fortschritt (z. B. Coins, freigeschaltete Upgrades, Musik, Schwierigkeit, Steuerung)",
+    app3l2: "Lokale Bestenliste (Name und Punktzahl, die du freiwillig eingibst)",
+    app3l3: "Spracheinstellung und Audio-Einstellungen",
+    app3l4: "Technische Merker für In-App-Käufe (z. B. bereits vergebene Transaktions-IDs, um Doppelvergaben zu vermeiden)",
+    app3d: "Diese Daten verbleiben auf deinem iPhone/iPad, bis du die App löschst oder die Daten in iOS zurücksetzt.",
+    app4t: "4. In-App-Käufe",
+    app4l1:
+      "Wenn du optionale Produkte kaufst (z. B. Coin-Pakete oder dauerhafte Freischaltungen), verarbeitet Apple die Zahlung. Wir erhalten keine vollständigen Zahlungsdaten (z. B. keine Kreditkartennummer). Apple kann uns eine Transaktions-ID und Produktinformationen zur Verfügung stellen, damit wir den Kauf im Spiel anwenden können.",
+    app4l2:
+      "Verbrauchbare Coin-Pakete werden nach Abschluss in der Regel nicht erneut ausgeliefert. „Käufe wiederherstellen“ synchronisiert vor allem dauerhafte Freischaltungen und ausstehende Transaktionen über deine Apple-ID.",
+    app5t: "5. Keine Tracking-Dienste",
+    app5d: "Wir binden keine Analyse- oder Werbe-SDKs von Drittanbietern ein und verkaufen keine personenbezogenen Daten.",
+    app6t: "6. Berechtigungen",
+    app6d: "Die App fordert keine Kamera-, Mikrofon-, Standort- oder Kontaktberechtigungen an.",
+    app7t: "7. Kinder",
+    app7d: "Die App richtet sich an ein allgemeines Publikum. Es werden wissentlich keine personenbezogenen Daten von Kindern an uns übermittelt.",
+    app8t: "8. Deine Rechte",
+    app8d:
+      "Du kannst lokale Daten jederzeit löschen, indem du die App deinstallierst oder App-Daten in den iOS-Einstellungen zurücksetzt. Für Käufe und Rückerstattungen wende dich an den",
+    app8Link: "Apple Support",
+    app9t: "9. Änderungen",
+    app9d: "Wir können diese Erklärung bei Bedarf anpassen. Die aktuelle Version ist unter der in App Store Connect angegebenen URL abrufbar.",
   },
   en: {
-    langLabel: "Language", skip: "Skip to content", navFeatures: "Features", navHow: "How to play", navEu: "EU compliance", heroEyebrow: "Synthwave • Arcade • Skill", heroTitle: "R-K8: Fast-paced neon arcade gameplay", heroLead: "Dodge enemy waves, earn credits, unlock upgrades, and chase your high score in a futuristic space style.", btnGuide: "How to play", btnFeatures: "View features", coreLoop: "Core loop", loop1: "Start and survive waves", loop2: "Earn credits and buy upgrades", loop3: "Optimize your build and push high score", featuresTitle: "Main features", howTitle: "How to play", euTitle: "EU compliance focus", legal: "Legal", imprint: "Imprint", privacy: "Privacy", access: "Accessibility", backHome: "Back to home", imprintLaw: "Information according to 5 TMG", contact: "Contact", responsible: "Responsible for content",
+    langLabel: "Language", skip: "Skip to content", navFeatures: "Features", navHow: "How to play", navEu: "EU compliance", heroEyebrow: "Synthwave • Arcade • Skill", heroWelcome: "Welcome to", heroTitle: "R-K8: Fast-paced neon arcade gameplay", heroLead: "Dodge enemy waves, earn credits, unlock upgrades, and chase your high score in a futuristic space style.", btnGuide: "How to play", btnFeatures: "View features", coreLoop: "Core loop", loop1: "Start and survive waves", loop2: "Earn credits and buy upgrades", loop3: "Optimize your build and push high score", featuresTitle: "Main features", howTitle: "How to play", euTitle: "EU compliance focus", legal: "Legal", imprint: "Imprint", privacy: "Privacy", access: "Accessibility", backHome: "Back to home", imprintLaw: "Information according to 5 TMG", contact: "Contact", responsible: "Responsible for content",
     f1t: "Dynamic arcade action",
     f1d: "Fast gameplay with rising difficulty and clear feedback for hits, explosions and combos.",
     f2t: "Power-ups and build strategy",
@@ -118,43 +166,90 @@ const t = {
     a3t: "Known limitations",
     a3d: "Some visual effects may vary depending on device/browser. If you find barriers, please report device, browser and issue details.",
     a4t: "Feedback and contact",
-    a4d: "We review reported barriers promptly and continuously improve the site."
+    a4d: "We review reported barriers promptly and continuously improve the site.",
+    supportTitle: "Support & help",
+    supContactT: "Contact",
+    supContactD:
+      "For questions about R-K8, in-app purchases or technical issues, contact us by email. We usually reply within a few business days.",
+    supRestoreT: "Restore purchases",
+    supRestoreD:
+      "In the game: Menu → \"…\" → \"Restore Purchases\". Use the same Apple ID as for the original purchase. Permanent unlocks (e.g. all power-ups or all music tracks) are restored.",
+    supRestoreNote:
+      "Coin packs are consumable in-app purchases; Apple typically does not re-deliver completed purchases. For billing questions, contact Apple purchase support.",
+    supTechT: "Technical issues",
+    supTechD:
+      "Please include in your email: device model, iOS version, a short description of the issue, and whether it started after an app update. Screenshots help with troubleshooting.",
+    supLegalT: "More information",
+    appPrivacyTitle: "App privacy policy",
+    appPrivacyMeta: "Last updated: May 2026 · Developer: Hashim Acra · Contact:",
+    app1t: "1. Controller",
+    app1d:
+      "The app R-K8 (bundle ID: com.hashim.gamebase1) is provided by Hashim Acra. For privacy questions, contact us at the email address above.",
+    app2t: "2. Summary",
+    app2l1: "No ads, no App Tracking Transparency (ATT), no advertising identifier (IDFA).",
+    app2l2: "No user accounts and no upload of gameplay progress to our servers.",
+    app2l3: "Gameplay data is stored only on your device (e.g. coins, high scores, settings).",
+    app2l4: "Optional in-app purchases are processed by Apple only.",
+    app3t: "3. What data do we process?",
+    app3Intro: "On-device only (UserDefaults / app storage):",
+    app3l1: "Game progress (e.g. coins, unlocked upgrades, music, difficulty, controls)",
+    app3l2: "Local leaderboard entries (name and score you optionally enter)",
+    app3l3: "Language and audio preferences",
+    app3l4: "Purchase bookkeeping (e.g. granted transaction IDs to prevent duplicate rewards)",
+    app3d: "This data stays on your iPhone/iPad until you delete the app or reset its data in iOS.",
+    app4t: "4. In-app purchases",
+    app4l1:
+      "If you buy optional products (e.g. coin packs or permanent unlocks), Apple processes payment. We do not receive full payment details (such as card numbers). Apple may provide a transaction ID and product information so we can apply the purchase in the game.",
+    app4l2:
+      "Consumable coin packs are generally not re-delivered after completion. “Restore Purchases” mainly syncs permanent unlocks and pending transactions for your Apple ID.",
+    app5t: "5. No tracking services",
+    app5d: "We do not integrate third-party analytics or advertising SDKs and we do not sell personal data.",
+    app6t: "6. Permissions",
+    app6d: "The app does not request camera, microphone, location, or contacts access.",
+    app7t: "7. Children",
+    app7d: "The app is intended for a general audience. We do not knowingly collect personal data from children.",
+    app8t: "8. Your rights",
+    app8d:
+      "You can delete local data at any time by uninstalling the app or resetting app data in iOS Settings. For purchases and refunds, contact",
+    app8Link: "Apple Support",
+    app9t: "9. Changes",
+    app9d: "We may update this policy when needed. The current version is available at the URL listed in App Store Connect.",
   },
   es: {
-    langLabel: "Idioma", skip: "Saltar al contenido", navFeatures: "Funciones", navHow: "Cómo jugar", navEu: "Conformidad UE", heroEyebrow: "Synthwave • Arcade • Habilidad", heroTitle: "R-K8: jugabilidad arcade neón intensa", heroLead: "Esquiva oleadas enemigas, gana créditos, desbloquea mejoras y supera tu récord.", btnGuide: "Guía de juego", btnFeatures: "Ver funciones", coreLoop: "Bucle principal", loop1: "Comienza y sobrevive oleadas", loop2: "Gana créditos y compra mejoras", loop3: "Optimiza tu build y sube récord", featuresTitle: "Funciones principales", howTitle: "Cómo jugar", euTitle: "Conformidad UE", legal: "Legal", imprint: "Aviso legal", privacy: "Privacidad", access: "Accesibilidad", backHome: "Volver al inicio", imprintLaw: "Información según 5 TMG", contact: "Contacto", responsible: "Responsable del contenido"
+    langLabel: "Idioma", skip: "Saltar al contenido", navFeatures: "Funciones", navHow: "Cómo jugar", navEu: "Conformidad UE", heroEyebrow: "Synthwave • Arcade • Habilidad", heroWelcome: "Bienvenido a", heroTitle: "R-K8: jugabilidad arcade neón intensa", heroLead: "Esquiva oleadas enemigas, gana créditos, desbloquea mejoras y supera tu récord.", btnGuide: "Guía de juego", btnFeatures: "Ver funciones", coreLoop: "Bucle principal", loop1: "Comienza y sobrevive oleadas", loop2: "Gana créditos y compra mejoras", loop3: "Optimiza tu build y sube récord", featuresTitle: "Funciones principales", howTitle: "Cómo jugar", euTitle: "Conformidad UE", legal: "Legal", imprint: "Aviso legal", privacy: "Privacidad", access: "Accesibilidad", backHome: "Volver al inicio", imprintLaw: "Información según 5 TMG", contact: "Contacto", responsible: "Responsable del contenido"
   },
   mx: {
-    langLabel: "Idioma", skip: "Saltar al contenido", navFeatures: "Funciones", navHow: "Cómo jugar", navEu: "Cumplimiento UE", heroEyebrow: "Synthwave • Arcade • Habilidad", heroTitle: "R-K8: acción arcade neón rápida", heroLead: "Esquiva oleadas enemigas, gana créditos, desbloquea mejoras y rompe tu récord.", btnGuide: "Guía de juego", btnFeatures: "Ver funciones", coreLoop: "Bucle principal", loop1: "Inicia y sobrevive oleadas", loop2: "Gana créditos y compra mejoras", loop3: "Optimiza tu build y sube récord", featuresTitle: "Funciones principales", howTitle: "Cómo jugar", euTitle: "Cumplimiento UE", legal: "Legal", imprint: "Aviso legal", privacy: "Privacidad", access: "Accesibilidad", backHome: "Volver al inicio", imprintLaw: "Información según 5 TMG", contact: "Contacto", responsible: "Responsable del contenido"
+    langLabel: "Idioma", skip: "Saltar al contenido", navFeatures: "Funciones", navHow: "Cómo jugar", navEu: "Cumplimiento UE", heroEyebrow: "Synthwave • Arcade • Habilidad", heroWelcome: "Bienvenido a", heroTitle: "R-K8: acción arcade neón rápida", heroLead: "Esquiva oleadas enemigas, gana créditos, desbloquea mejoras y rompe tu récord.", btnGuide: "Guía de juego", btnFeatures: "Ver funciones", coreLoop: "Bucle principal", loop1: "Inicia y sobrevive oleadas", loop2: "Gana créditos y compra mejoras", loop3: "Optimiza tu build y sube récord", featuresTitle: "Funciones principales", howTitle: "Cómo jugar", euTitle: "Cumplimiento UE", legal: "Legal", imprint: "Aviso legal", privacy: "Privacidad", access: "Accesibilidad", backHome: "Volver al inicio", imprintLaw: "Información según 5 TMG", contact: "Contacto", responsible: "Responsable del contenido"
   },
   it: {
-    langLabel: "Lingua", skip: "Vai al contenuto", navFeatures: "Funzionalità", navHow: "Come giocare", navEu: "Conformità UE", heroEyebrow: "Synthwave • Arcade • Skill", heroTitle: "R-K8: gameplay arcade neon ad alta velocità", heroLead: "Schiva ondate nemiche, guadagna crediti, sblocca upgrade e migliora il tuo record.", btnGuide: "Guida", btnFeatures: "Vedi funzionalità", coreLoop: "Ciclo di gioco", loop1: "Inizia e sopravvivi", loop2: "Guadagna crediti e compra upgrade", loop3: "Ottimizza la build e il record", featuresTitle: "Funzionalità principali", howTitle: "Come giocare", euTitle: "Conformità UE", legal: "Note legali", imprint: "Impressum", privacy: "Privacy", access: "Accessibilità", backHome: "Torna alla home", imprintLaw: "Informazioni ai sensi del 5 TMG", contact: "Contatto", responsible: "Responsabile dei contenuti"
+    langLabel: "Lingua", skip: "Vai al contenuto", navFeatures: "Funzionalità", navHow: "Come giocare", navEu: "Conformità UE", heroEyebrow: "Synthwave • Arcade • Skill", heroWelcome: "Benvenuto in", heroTitle: "R-K8: gameplay arcade neon ad alta velocità", heroLead: "Schiva ondate nemiche, guadagna crediti, sblocca upgrade e migliora il tuo record.", btnGuide: "Guida", btnFeatures: "Vedi funzionalità", coreLoop: "Ciclo di gioco", loop1: "Inizia e sopravvivi", loop2: "Guadagna crediti e compra upgrade", loop3: "Ottimizza la build e il record", featuresTitle: "Funzionalità principali", howTitle: "Come giocare", euTitle: "Conformità UE", legal: "Note legali", imprint: "Impressum", privacy: "Privacy", access: "Accessibilità", backHome: "Torna alla home", imprintLaw: "Informazioni ai sensi del 5 TMG", contact: "Contatto", responsible: "Responsabile dei contenuti"
   },
   fr: {
-    langLabel: "Langue", skip: "Aller au contenu", navFeatures: "Fonctionnalités", navHow: "Comment jouer", navEu: "Conformité UE", heroEyebrow: "Synthwave • Arcade • Skill", heroTitle: "R-K8 : gameplay arcade néon nerveux", heroLead: "Esquivez les vagues ennemies, gagnez des crédits, débloquez des améliorations et battez votre score.", btnGuide: "Guide de jeu", btnFeatures: "Voir les fonctionnalités", coreLoop: "Boucle de jeu", loop1: "Démarrer et survivre", loop2: "Gagner des crédits et acheter", loop3: "Optimiser le build et le score", featuresTitle: "Fonctionnalités principales", howTitle: "Comment jouer", euTitle: "Conformité UE", legal: "Mentions légales", imprint: "Mentions", privacy: "Confidentialité", access: "Accessibilité", backHome: "Retour à l'accueil", imprintLaw: "Informations selon le §5 TMG", contact: "Contact", responsible: "Responsable du contenu"
+    langLabel: "Langue", skip: "Aller au contenu", navFeatures: "Fonctionnalités", navHow: "Comment jouer", navEu: "Conformité UE", heroEyebrow: "Synthwave • Arcade • Skill", heroWelcome: "Bienvenue sur", heroTitle: "R-K8 : gameplay arcade néon nerveux", heroLead: "Esquivez les vagues ennemies, gagnez des crédits, débloquez des améliorations et battez votre score.", btnGuide: "Guide de jeu", btnFeatures: "Voir les fonctionnalités", coreLoop: "Boucle de jeu", loop1: "Démarrer et survivre", loop2: "Gagner des crédits et acheter", loop3: "Optimiser le build et le score", featuresTitle: "Fonctionnalités principales", howTitle: "Comment jouer", euTitle: "Conformité UE", legal: "Mentions légales", imprint: "Mentions", privacy: "Confidentialité", access: "Accessibilité", backHome: "Retour à l'accueil", imprintLaw: "Informations selon le §5 TMG", contact: "Contact", responsible: "Responsable du contenu"
   },
   pt: {
-    langLabel: "Idioma", skip: "Saltar para o conteúdo", navFeatures: "Recursos", navHow: "Como jogar", navEu: "Conformidade UE", heroEyebrow: "Synthwave • Arcade • Skill", heroTitle: "R-K8: gameplay arcade neon rápido", heroLead: "Desvie de ondas inimigas, ganhe créditos, desbloqueie upgrades e bata seu recorde.", btnGuide: "Guia do jogo", btnFeatures: "Ver recursos", coreLoop: "Loop principal", loop1: "Inicie e sobreviva às ondas", loop2: "Ganhe créditos e compre upgrades", loop3: "Otimize sua build e recorde", featuresTitle: "Recursos principais", howTitle: "Como jogar", euTitle: "Conformidade UE", legal: "Legal", imprint: "Aviso legal", privacy: "Privacidade", access: "Acessibilidade", backHome: "Voltar ao início", imprintLaw: "Informações conforme §5 TMG", contact: "Contato", responsible: "Responsável pelo conteúdo"
+    langLabel: "Idioma", skip: "Saltar para o conteúdo", navFeatures: "Recursos", navHow: "Como jogar", navEu: "Conformidade UE", heroEyebrow: "Synthwave • Arcade • Skill", heroWelcome: "Bem-vindo ao", heroTitle: "R-K8: gameplay arcade neon rápido", heroLead: "Desvie de ondas inimigas, ganhe créditos, desbloqueie upgrades e bata seu recorde.", btnGuide: "Guia do jogo", btnFeatures: "Ver recursos", coreLoop: "Loop principal", loop1: "Inicie e sobreviva às ondas", loop2: "Ganhe créditos e compre upgrades", loop3: "Otimize sua build e recorde", featuresTitle: "Recursos principais", howTitle: "Como jogar", euTitle: "Conformidade UE", legal: "Legal", imprint: "Aviso legal", privacy: "Privacidade", access: "Acessibilidade", backHome: "Voltar ao início", imprintLaw: "Informações conforme §5 TMG", contact: "Contato", responsible: "Responsável pelo conteúdo"
   },
   ar: {
-    langLabel: "اللغة", skip: "انتقل إلى المحتوى", navFeatures: "المميزات", navHow: "طريقة اللعب", navEu: "الامتثال الأوروبي", heroEyebrow: "سينث ويف • أركيد • مهارة", heroTitle: "R-K8: أسلوب أركيد نيون سريع", heroLead: "تجنب موجات الأعداء، اجمع الرصيد، افتح الترقيات، وحقق أعلى نتيجة.", btnGuide: "دليل اللعب", btnFeatures: "عرض المميزات", coreLoop: "حلقة اللعب", loop1: "ابدأ واصمد أمام الموجات", loop2: "اكسب الرصيد واشترِ الترقيات", loop3: "حسّن البناء وارفع النتيجة", featuresTitle: "المميزات الرئيسية", howTitle: "طريقة اللعب", euTitle: "الامتثال الأوروبي", legal: "قانوني", imprint: "بيانات النشر", privacy: "الخصوصية", access: "إمكانية الوصول", backHome: "العودة للرئيسية", imprintLaw: "بيانات وفق §5 TMG", contact: "التواصل", responsible: "المسؤول عن المحتوى"
+    langLabel: "اللغة", skip: "انتقل إلى المحتوى", navFeatures: "المميزات", navHow: "طريقة اللعب", navEu: "الامتثال الأوروبي", heroEyebrow: "سينث ويف • أركيد • مهارة", heroWelcome: "مرحباً بـ", heroTitle: "R-K8: أسلوب أركيد نيون سريع", heroLead: "تجنب موجات الأعداء، اجمع الرصيد، افتح الترقيات، وحقق أعلى نتيجة.", btnGuide: "دليل اللعب", btnFeatures: "عرض المميزات", coreLoop: "حلقة اللعب", loop1: "ابدأ واصمد أمام الموجات", loop2: "اكسب الرصيد واشترِ الترقيات", loop3: "حسّن البناء وارفع النتيجة", featuresTitle: "المميزات الرئيسية", howTitle: "طريقة اللعب", euTitle: "الامتثال الأوروبي", legal: "قانوني", imprint: "بيانات النشر", privacy: "الخصوصية", access: "إمكانية الوصول", backHome: "العودة للرئيسية", imprintLaw: "بيانات وفق §5 TMG", contact: "التواصل", responsible: "المسؤول عن المحتوى"
   },
   ja: {
-    langLabel: "言語", skip: "コンテンツへ移動", navFeatures: "特徴", navHow: "遊び方", navEu: "EU準拠", heroEyebrow: "シンセウェーブ • アーケード • スキル", heroTitle: "R-K8: ハイテンポなネオンアーケード", heroLead: "敵の波を回避し、クレジットを集め、アップグレードを解除してハイスコアを狙おう。", btnGuide: "遊び方", btnFeatures: "特徴を見る", coreLoop: "ゲームループ", loop1: "開始してウェーブを生き残る", loop2: "クレジットを稼いで購入", loop3: "ビルド最適化とスコア更新", featuresTitle: "主な特徴", howTitle: "遊び方", euTitle: "EU準拠", legal: "法的情報", imprint: "運営者情報", privacy: "プライバシー", access: "アクセシビリティ", backHome: "ホームへ戻る", imprintLaw: "TMG第5条に基づく情報", contact: "連絡先", responsible: "コンテンツ責任者"
+    langLabel: "言語", skip: "コンテンツへ移動", navFeatures: "特徴", navHow: "遊び方", navEu: "EU準拠", heroEyebrow: "シンセウェーブ • アーケード • スキル", heroWelcome: "ようこそ", heroTitle: "R-K8: ハイテンポなネオンアーケード", heroLead: "敵の波を回避し、クレジットを集め、アップグレードを解除してハイスコアを狙おう。", btnGuide: "遊び方", btnFeatures: "特徴を見る", coreLoop: "ゲームループ", loop1: "開始してウェーブを生き残る", loop2: "クレジットを稼いで購入", loop3: "ビルド最適化とスコア更新", featuresTitle: "主な特徴", howTitle: "遊び方", euTitle: "EU準拠", legal: "法的情報", imprint: "運営者情報", privacy: "プライバシー", access: "アクセシビリティ", backHome: "ホームへ戻る", imprintLaw: "TMG第5条に基づく情報", contact: "連絡先", responsible: "コンテンツ責任者"
   },
   ru: {
-    langLabel: "Язык", skip: "Перейти к содержимому", navFeatures: "Особенности", navHow: "Как играть", navEu: "Соответствие ЕС", heroEyebrow: "Synthwave • Arcade • Skill", heroTitle: "R-K8: динамичный неон-аркадный геймплей", heroLead: "Уклоняйтесь от волн врагов, зарабатывайте кредиты, открывайте улучшения и бейте рекорд.", btnGuide: "Руководство", btnFeatures: "Смотреть особенности", coreLoop: "Основной цикл", loop1: "Старт и выживание", loop2: "Кредиты и улучшения", loop3: "Оптимизация билда и рекорда", featuresTitle: "Ключевые особенности", howTitle: "Как играть", euTitle: "Соответствие ЕС", legal: "Правовая информация", imprint: "Импрессум", privacy: "Конфиденциальность", access: "Доступность", backHome: "Назад на главную", imprintLaw: "Сведения согласно §5 TMG", contact: "Контакты", responsible: "Ответственный за содержание"
+    langLabel: "Язык", skip: "Перейти к содержимому", navFeatures: "Особенности", navHow: "Как играть", navEu: "Соответствие ЕС", heroEyebrow: "Synthwave • Arcade • Skill", heroWelcome: "Добро пожаловать в", heroTitle: "R-K8: динамичный неон-аркадный геймплей", heroLead: "Уклоняйтесь от волн врагов, зарабатывайте кредиты, открывайте улучшения и бейте рекорд.", btnGuide: "Руководство", btnFeatures: "Смотреть особенности", coreLoop: "Основной цикл", loop1: "Старт и выживание", loop2: "Кредиты и улучшения", loop3: "Оптимизация билда и рекорда", featuresTitle: "Ключевые особенности", howTitle: "Как играть", euTitle: "Соответствие ЕС", legal: "Правовая информация", imprint: "Импрессум", privacy: "Конфиденциальность", access: "Доступность", backHome: "Назад на главную", imprintLaw: "Сведения согласно §5 TMG", contact: "Контакты", responsible: "Ответственный за содержание"
   },
   sv: {
-    langLabel: "Språk", skip: "Hoppa till innehåll", navFeatures: "Funktioner", navHow: "Hur man spelar", navEu: "EU-efterlevnad", heroEyebrow: "Synthwave • Arkad • Skill", heroTitle: "R-K8: snabb neon-arkadaction", heroLead: "Undvik fiendevågor, tjäna credits, lås upp uppgraderingar och slå ditt rekord.", btnGuide: "Spelguide", btnFeatures: "Visa funktioner", coreLoop: "Kärnloop", loop1: "Starta och överlev vågor", loop2: "Tjäna credits och köp", loop3: "Optimera build och rekord", featuresTitle: "Huvudfunktioner", howTitle: "Hur man spelar", euTitle: "EU-efterlevnad", legal: "Juridiskt", imprint: "Impressum", privacy: "Integritet", access: "Tillgänglighet", backHome: "Tillbaka till startsidan", imprintLaw: "Uppgifter enligt 5 TMG", contact: "Kontakt", responsible: "Ansvarig för innehållet"
+    langLabel: "Språk", skip: "Hoppa till innehåll", navFeatures: "Funktioner", navHow: "Hur man spelar", navEu: "EU-efterlevnad", heroEyebrow: "Synthwave • Arkad • Skill", heroWelcome: "Välkommen till", heroTitle: "R-K8: snabb neon-arkadaction", heroLead: "Undvik fiendevågor, tjäna credits, lås upp uppgraderingar och slå ditt rekord.", btnGuide: "Spelguide", btnFeatures: "Visa funktioner", coreLoop: "Kärnloop", loop1: "Starta och överlev vågor", loop2: "Tjäna credits och köp", loop3: "Optimera build och rekord", featuresTitle: "Huvudfunktioner", howTitle: "Hur man spelar", euTitle: "EU-efterlevnad", legal: "Juridiskt", imprint: "Impressum", privacy: "Integritet", access: "Tillgänglighet", backHome: "Tillbaka till startsidan", imprintLaw: "Uppgifter enligt 5 TMG", contact: "Kontakt", responsible: "Ansvarig för innehållet"
   },
   hi: {
-    langLabel: "भाषा", skip: "सामग्री पर जाएँ", navFeatures: "फ़ीचर्स", navHow: "कैसे खेलें", navEu: "EU अनुपालन", heroEyebrow: "सिंथवेव • आर्केड • स्किल", heroTitle: "R-K8: तेज़ नीयॉन आर्केड गेमप्ले", heroLead: "दुश्मन वेव से बचें, क्रेडिट कमाएँ, अपग्रेड अनलॉक करें और हाईस्कोर बनाएं।", btnGuide: "गेम गाइड", btnFeatures: "फ़ीचर्स देखें", coreLoop: "कोर लूप", loop1: "शुरू करें और वेव सर्वाइव करें", loop2: "क्रेडिट कमाएँ और खरीदें", loop3: "बिल्ड ऑप्टिमाइज़ करें", featuresTitle: "मुख्य फ़ीचर्स", howTitle: "कैसे खेलें", euTitle: "EU अनुपालन", legal: "कानूनी", imprint: "इम्प्रिंट", privacy: "गोपनीयता", access: "सुलभता", backHome: "होम पर वापस", imprintLaw: "§5 TMG के अनुसार जानकारी", contact: "संपर्क", responsible: "सामग्री के लिए जिम्मेदार"
+    langLabel: "भाषा", skip: "सामग्री पर जाएँ", navFeatures: "फ़ीचर्स", navHow: "कैसे खेलें", navEu: "EU अनुपालन", heroEyebrow: "सिंथवेव • आर्केड • स्किल", heroWelcome: "स्वागत है —", heroTitle: "R-K8: तेज़ नीयॉन आर्केड गेमप्ले", heroLead: "दुश्मन वेव से बचें, क्रेडिट कमाएँ, अपग्रेड अनलॉक करें और हाईस्कोर बनाएं।", btnGuide: "गेम गाइड", btnFeatures: "फ़ीचर्स देखें", coreLoop: "कोर लूप", loop1: "शुरू करें और वेव सर्वाइव करें", loop2: "क्रेडिट कमाएँ और खरीदें", loop3: "बिल्ड ऑप्टिमाइज़ करें", featuresTitle: "मुख्य फ़ीचर्स", howTitle: "कैसे खेलें", euTitle: "EU अनुपालन", legal: "कानूनी", imprint: "इम्प्रिंट", privacy: "गोपनीयता", access: "सुलभता", backHome: "होम पर वापस", imprintLaw: "§5 TMG के अनुसार जानकारी", contact: "संपर्क", responsible: "सामग्री के लिए जिम्मेदार"
   },
   zh: {
-    langLabel: "语言", skip: "跳到内容", navFeatures: "功能", navHow: "玩法", navEu: "欧盟合规", heroEyebrow: "合成波 • 街机 • 技巧", heroTitle: "R-K8：高节奏霓虹街机体验", heroLead: "躲避敌方波次，赚取积分，解锁升级，不断刷新最高分。", btnGuide: "游戏指南", btnFeatures: "查看功能", coreLoop: "核心循环", loop1: "开始并生存", loop2: "赚积分并购买升级", loop3: "优化配置冲击高分", featuresTitle: "主要功能", howTitle: "玩法", euTitle: "欧盟合规重点", legal: "法律信息", imprint: "网站信息", privacy: "隐私", access: "无障碍", backHome: "返回首页", imprintLaw: "根据 TMG 第5条信息", contact: "联系方式", responsible: "内容负责人"
+    langLabel: "语言", skip: "跳到内容", navFeatures: "功能", navHow: "玩法", navEu: "欧盟合规", heroEyebrow: "合成波 • 街机 • 技巧", heroWelcome: "欢迎来到", heroTitle: "R-K8：高节奏霓虹街机体验", heroLead: "躲避敌方波次，赚取积分，解锁升级，不断刷新最高分。", btnGuide: "游戏指南", btnFeatures: "查看功能", coreLoop: "核心循环", loop1: "开始并生存", loop2: "赚积分并购买升级", loop3: "优化配置冲击高分", featuresTitle: "主要功能", howTitle: "玩法", euTitle: "欧盟合规重点", legal: "法律信息", imprint: "网站信息", privacy: "隐私", access: "无障碍", backHome: "返回首页", imprintLaw: "根据 TMG 第5条信息", contact: "联系方式", responsible: "内容负责人"
   },
   nl: {
-    langLabel: "Taal", skip: "Ga naar inhoud", navFeatures: "Functies", navHow: "Hoe te spelen", navEu: "EU-conformiteit", heroEyebrow: "Synthwave • Arcade • Skill", heroTitle: "R-K8: snelle neon-arcade gameplay", heroLead: "Ontwijk vijandgolven, verdien credits, speel upgrades vrij en verbeter je highscore.", btnGuide: "Spelgids", btnFeatures: "Bekijk functies", coreLoop: "Kernlus", loop1: "Starten en overleven", loop2: "Credits verdienen en kopen", loop3: "Build optimaliseren", featuresTitle: "Belangrijkste functies", howTitle: "Hoe te spelen", euTitle: "EU-conformiteit", legal: "Juridisch", imprint: "Impressum", privacy: "Privacy", access: "Toegankelijkheid", backHome: "Terug naar start", imprintLaw: "Gegevens volgens §5 TMG", contact: "Contact", responsible: "Verantwoordelijk voor inhoud"
+    langLabel: "Taal", skip: "Ga naar inhoud", navFeatures: "Functies", navHow: "Hoe te spelen", navEu: "EU-conformiteit", heroEyebrow: "Synthwave • Arcade • Skill", heroWelcome: "Welkom bij", heroTitle: "R-K8: snelle neon-arcade gameplay", heroLead: "Ontwijk vijandgolven, verdien credits, speel upgrades vrij en verbeter je highscore.", btnGuide: "Spelgids", btnFeatures: "Bekijk functies", coreLoop: "Kernlus", loop1: "Starten en overleven", loop2: "Credits verdienen en kopen", loop3: "Build optimaliseren", featuresTitle: "Belangrijkste functies", howTitle: "Hoe te spelen", euTitle: "EU-conformiteit", legal: "Juridisch", imprint: "Impressum", privacy: "Privacy", access: "Toegankelijkheid", backHome: "Terug naar start", imprintLaw: "Gegevens volgens §5 TMG", contact: "Contact", responsible: "Verantwoordelijk voor inhoud"
   },
 };
 
@@ -395,6 +490,7 @@ for (const [lang, copy] of Object.entries(fullContent)) {
 
 const extendedContent = {
   de: {
+    heroWelcome: "Willkommen bei",
     navGameplay: "Gameplay",
     navSystems: "Systeme",
     navProgress: "Fortschritt",
@@ -475,6 +571,7 @@ const extendedContent = {
     s4d: "Investiere Münzen in CPU-Upgrades und Musik. Wiederhole Runs, um Style-Rang S zu jagen, Veteran-Rang aufzusteigen und deinen lokalen Rekord zu brechen.",
   },
   en: {
+    heroWelcome: "Welcome to",
     navGameplay: "Gameplay",
     navSystems: "Systems",
     navProgress: "Progress",

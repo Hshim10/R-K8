@@ -15,6 +15,8 @@
   --focus: #a7f6ff;
   --font-display: "SF Pro Display", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-body: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --link-legal: #f6f0ff;
+  --link-legal-hover: #ffffff;
 }
 
 *,
@@ -25,6 +27,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 html,
@@ -88,8 +91,7 @@ body::before {
 .site-header {
   position: sticky;
   top: 0;
-  backdrop-filter: blur(16px);
-  background: rgba(8, 4, 20, 0.82);
+  background: rgba(8, 4, 20, 0.94);
   border-bottom: 1px solid rgba(5, 216, 232, 0.12);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
   z-index: 20;
@@ -181,6 +183,8 @@ body::before {
   overflow: hidden;
   border: 1px solid rgba(5, 216, 232, 0.22);
   background:
+    radial-gradient(ellipse 90% 55% at 50% 100%, rgba(255, 41, 117, 0.22), transparent 58%),
+    radial-gradient(circle at 20% 15%, rgba(5, 216, 232, 0.14), transparent 42%),
     linear-gradient(180deg, rgba(13, 5, 36, 0.4) 0%, rgba(21, 5, 53, 0.95) 100%);
   box-shadow:
     0 0 40px rgba(5, 216, 232, 0.08),
@@ -191,80 +195,147 @@ body::before {
   content: "";
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(transparent 62%, rgba(5, 216, 232, 0.55) 62.5%, transparent 63%),
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 28px,
-      rgba(5, 216, 232, 0.14) 28px,
-      rgba(5, 216, 232, 0.14) 29px
-    );
+  z-index: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 28px,
+    rgba(5, 216, 232, 0.14) 28px,
+    rgba(5, 216, 232, 0.14) 29px
+  );
   transform: perspective(320px) rotateX(58deg) scale(1.6);
   transform-origin: center 85%;
   opacity: 0.7;
-}
-
-.hero-ship {
-  position: absolute;
-  left: 50%;
-  bottom: 38%;
-  width: 0;
-  height: 0;
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-bottom: 36px solid var(--cyan);
-  transform: translateX(-50%);
-  filter: drop-shadow(0 0 16px var(--cyan-glow)) drop-shadow(0 0 32px var(--magenta-glow));
-  animation: shipHover 2.8s ease-in-out infinite;
-}
-
-.hero-ship::after {
-  content: "";
-  position: absolute;
-  top: 38px;
-  left: -8px;
-  width: 16px;
-  height: 22px;
-  background: linear-gradient(180deg, var(--magenta), transparent);
-  border-radius: 50%;
-  opacity: 0.75;
-  animation: enginePulse 0.6s ease-in-out infinite alternate;
-}
-
-.hero-orbs {
-  position: absolute;
-  inset: 0;
   pointer-events: none;
 }
 
-.hero-orb {
+.hero-sprites {
   position: absolute;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--magenta);
-  box-shadow: 0 0 12px var(--magenta-glow);
-  animation: orbFloat 4s ease-in-out infinite;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
 }
 
-.hero-orb:nth-child(1) { top: 18%; left: 22%; animation-delay: 0s; }
-.hero-orb:nth-child(2) { top: 30%; right: 18%; background: var(--yellow); box-shadow: 0 0 12px rgba(255, 243, 51, 0.5); animation-delay: 0.8s; }
-.hero-orb:nth-child(3) { top: 48%; left: 12%; background: var(--purple); animation-delay: 1.4s; }
-
-@keyframes shipHover {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(-8px); }
+.hero-enemy {
+  position: absolute;
+  display: block;
+  height: auto;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  user-select: none;
+  -webkit-user-drag: none;
+  rotate: 180deg;
+  filter:
+    drop-shadow(0 0 8px rgba(5, 216, 232, 0.45))
+    drop-shadow(0 0 14px rgba(255, 41, 117, 0.28));
+  animation: enemyDrift 4.2s ease-in-out infinite;
 }
 
-@keyframes enginePulse {
-  from { opacity: 0.45; transform: scaleY(0.85); }
-  to { opacity: 0.95; transform: scaleY(1.15); }
+.hero-enemy--1 {
+  top: 14%;
+  left: 18%;
+  width: min(34%, 96px);
+  animation-delay: 0s;
 }
 
-@keyframes orbFloat {
-  0%, 100% { transform: translateY(0); opacity: 0.7; }
-  50% { transform: translateY(-12px); opacity: 1; }
+.hero-enemy--2 {
+  top: 26%;
+  right: 14%;
+  width: min(30%, 88px);
+  animation-delay: 0.9s;
+}
+
+.hero-enemy--3 {
+  top: 42%;
+  left: 10%;
+  width: min(28%, 80px);
+  animation-delay: 1.6s;
+}
+
+.hero-title-stack {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.hero-welcome {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(0.7rem, 2.6vw, 0.92rem);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(246, 246, 255, 0.82);
+  text-shadow: 0 0 14px rgba(5, 216, 232, 0.35);
+  white-space: nowrap;
+}
+
+/* Synthwave-Chrom „R-K8“ wie im Startbildschirm (MenuView.startScreenGameTitleChrome) */
+.hero-game-title {
+  position: relative;
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 9vw, 3.35rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  white-space: nowrap;
+  pointer-events: none;
+  filter:
+    drop-shadow(0 -3px 12px rgba(5, 216, 232, 0.52))
+    drop-shadow(0 5px 14px rgba(255, 41, 117, 0.38))
+    drop-shadow(0 2px 5px rgba(0, 0, 0, 0.62));
+}
+
+.hero-game-title__outline,
+.hero-game-title__fill {
+  display: block;
+}
+
+.hero-game-title__outline {
+  position: absolute;
+  inset: 0;
+  color: rgba(224, 245, 255, 0.92);
+  text-shadow:
+    -1px -1px 0 rgba(224, 245, 255, 0.92),
+    0 -1px 0 rgba(224, 245, 255, 0.92),
+    1px -1px 0 rgba(224, 245, 255, 0.92),
+    -1px 0 0 rgba(224, 245, 255, 0.92),
+    1px 0 0 rgba(224, 245, 255, 0.92),
+    -1px 1px 0 rgba(224, 245, 255, 0.92),
+    0 1px 0 rgba(224, 245, 255, 0.92),
+    1px 1px 0 rgba(224, 245, 255, 0.92);
+}
+
+.hero-game-title__fill {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    #52e0ff 0%,
+    #9ef2ff 32%,
+    #ebfcff 43%,
+    #ffffff 49.5%,
+    #ffffff 52%,
+    #ff6bd1 57%,
+    #ff296e 74%,
+    #5c1485 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes enemyDrift {
+  0%, 100% { transform: rotate(180deg) translateY(0); }
+  50% { transform: rotate(180deg) translateY(10px); }
 }
 
 .eyebrow {
@@ -354,7 +425,6 @@ h2 {
   background: var(--surface);
   border: 1px solid var(--surface-border);
   border-radius: 0.95rem;
-  backdrop-filter: blur(12px);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.32);
 }
 
@@ -581,6 +651,49 @@ h2 {
   gap: 0.9rem;
 }
 
+.legal-meta {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: -0.4rem 0 1.2rem;
+}
+
+.legal-card ul {
+  margin: 0.35rem 0 0.65rem;
+  padding-left: 1.2rem;
+  color: var(--text-muted);
+}
+
+.legal-card li {
+  margin-bottom: 0.4rem;
+}
+
+.legal-card li:last-child {
+  margin-bottom: 0;
+}
+
+.legal-card a,
+.legal-links a,
+.legal-meta a {
+  color: var(--link-legal);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: rgba(255, 255, 255, 0.45);
+}
+
+.legal-card a:hover,
+.legal-links a:hover,
+.legal-meta a:hover {
+  color: var(--link-legal-hover);
+  text-decoration-color: var(--magenta);
+}
+
+.legal-links__sep {
+  color: var(--text-muted);
+  margin: 0 0.35rem;
+}
+
 a:focus-visible,
 button:focus-visible,
 select:focus-visible {
@@ -659,14 +772,41 @@ select:focus-visible {
   }
 }
 
+@media (min-width: 961px) {
+  .site-header {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(8, 4, 20, 0.82);
+  }
+}
+
+/* Mobil: leichtere Scroll-Optimierung, Hero bleibt animiert */
+@media (max-width: 960px), (hover: none) and (pointer: coarse) {
+  .btn:hover {
+    transform: none;
+  }
+
+  .section {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 480px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
 
-  .hero-ship,
-  .hero-ship::after,
-  .hero-orb {
+  .hero-enemy {
     animation: none;
+    will-change: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
