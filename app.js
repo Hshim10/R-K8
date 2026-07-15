@@ -94,7 +94,7 @@ const t = {
       "Bitte nenne in deiner E-Mail: Gerätemodell, iOS-Version, kurze Beschreibung des Problems und ob es nach einem App-Update aufgetreten ist. Screenshots helfen bei der Fehlersuche.",
     supLegalT: "Weitere Informationen",
     appPrivacyTitle: "App-Datenschutz",
-    appPrivacyMeta: "Stand: Mai 2026 · Entwickler: Hashim Acra · Kontakt:",
+    appPrivacyMeta: "Stand: Juli 2026 · Entwickler: Hashim Acra · Kontakt:",
     app1t: "1. Verantwortlicher",
     app1d:
       "Verantwortlich für die App R-K8 (Bundle-ID: com.hashim.gamebase1) ist der Entwickler Hashim Acra. Bei Fragen zum Datenschutz erreichst du uns unter der oben genannten E-Mail-Adresse.",
@@ -103,6 +103,8 @@ const t = {
     app2l2: "Keine Erstellung von Nutzerkonten und keine Übermittlung von Spielständen an unsere Server.",
     app2l3: "Spieldaten werden nur lokal auf deinem Gerät gespeichert (z. B. Coins, Highscores, Einstellungen).",
     app2l4: "Optionale In-App-Käufe werden ausschließlich von Apple abgewickelt.",
+    app2l5:
+      "Der optionale VS-Duell-Modus verbindet zwei nahe Geräte direkt über das lokale Netzwerk; wir erhalten oder speichern diese Sitzungsdaten nicht.",
     app3t: "3. Welche Daten verarbeiten wir?",
     app3Intro: "Lokal auf dem Gerät (UserDefaults / App-Speicher):",
     app3l1: "Spielstand und Fortschritt (z. B. Coins, freigeschaltete Upgrades, Musik, Schwierigkeit, Steuerung)",
@@ -117,16 +119,24 @@ const t = {
       "Verbrauchbare Coin-Pakete werden nach Abschluss in der Regel nicht erneut ausgeliefert. „Käufe wiederherstellen“ synchronisiert vor allem dauerhafte Freischaltungen und ausstehende Transaktionen über deine Apple-ID.",
     app5t: "5. Keine Tracking-Dienste",
     app5d: "Wir binden keine Analyse- oder Werbe-SDKs von Drittanbietern ein und verkaufen keine personenbezogenen Daten.",
-    app6t: "6. Berechtigungen",
-    app6d: "Die App fordert keine Kamera-, Mikrofon-, Standort- oder Kontaktberechtigungen an.",
-    app7t: "7. Kinder",
-    app7d: "Die App richtet sich an ein allgemeines Publikum. Es werden wissentlich keine personenbezogenen Daten von Kindern an uns übermittelt.",
-    app8t: "8. Deine Rechte",
+    app6t: "6. VS-Duell (lokaler Mehrspielermodus)",
+    app6l1:
+      "Der optionale VS-Duell-Modus verbindet zwei nahe Geräte direkt über das lokale Netzwerk mit Apple MultipeerConnectivity. Es sind weder Matchmaking-Server noch ein Benutzerkonto erforderlich.",
+    app6l2:
+      "Während einer Session können Gerätenamen und Spieldaten (z. B. Schiffsposition und Score) nur zwischen den beiden verbundenen Spielern ausgetauscht werden. Die Kommunikation wird von Apple verschlüsselt. Wir erhalten, speichern oder analysieren diese Daten nicht.",
+    app7t: "7. Berechtigungen",
+    app7d:
+      "Für das optionale VS-Duell kann die App den Zugriff auf das lokale Netzwerk anfragen, damit sich zwei Geräte in der Nähe finden können. Die App fordert keine Kamera-, Mikrofon-, Standort- oder Kontaktberechtigungen an.",
+    app8t: "8. Kinder",
     app8d:
+      "Die App richtet sich an ein allgemeines Publikum. Es werden wissentlich keine personenbezogenen Daten von Kindern an uns übermittelt.",
+    app9t: "9. Deine Rechte",
+    app9d:
       "Du kannst lokale Daten jederzeit löschen, indem du die App deinstallierst oder App-Daten in den iOS-Einstellungen zurücksetzt. Für Käufe und Rückerstattungen wende dich an den",
-    app8Link: "Apple Support",
-    app9t: "9. Änderungen",
-    app9d: "Wir können diese Erklärung bei Bedarf anpassen. Die aktuelle Version ist unter der in App Store Connect angegebenen URL abrufbar.",
+    app9Link: "Apple Support",
+    app10t: "10. Änderungen",
+    app10d:
+      "Wir können diese Erklärung bei Bedarf anpassen. Die aktuelle Version ist unter der in App Store Connect angegebenen URL abrufbar.",
     metaTitleIndex: "R-K8 — Neon-Arcade-Shooter",
     metaDescIndex:
       "R-K8 — Neon-Arcade-Shooter für iOS. Wellen, Power-Ups, Tägliche Missionen, Veteran-Ränge und Synthwave-Design.",
@@ -137,7 +147,8 @@ const t = {
     metaTitlePrivacy: "Datenschutz — R-K8",
     metaDescPrivacy: "Datenschutzerklärung der R-K8-Website: Hosting, Cookies, Kontakt und Betroffenenrechte.",
     metaTitleAppPrivacy: "App-Datenschutz — R-K8",
-    metaDescAppPrivacy: "Datenschutz der iOS-App R-K8: lokale Speicherung, In-App-Käufe und keine Tracking-Dienste.",
+    metaDescAppPrivacy:
+      "Datenschutz der iOS-App R-K8: lokale Speicherung, In-App-Käufe, optionaler lokaler VS-Modus und keine Tracking-Dienste.",
     metaTitleAccess: "Barrierefreiheit — R-K8",
     metaDescAccess: "Barrierefreiheit der R-K8-Website: Maßnahmen, Grenzen und Kontakt für Feedback.",
   },
@@ -194,7 +205,7 @@ const t = {
       "Please include in your email: device model, iOS version, a short description of the issue, and whether it started after an app update. Screenshots help with troubleshooting.",
     supLegalT: "More information",
     appPrivacyTitle: "App privacy policy",
-    appPrivacyMeta: "Last updated: May 2026 · Developer: Hashim Acra · Contact:",
+    appPrivacyMeta: "Last updated: July 2026 · Developer: Hashim Acra · Contact:",
     app1t: "1. Controller",
     app1d:
       "The app R-K8 (bundle ID: com.hashim.gamebase1) is provided by Hashim Acra. For privacy questions, contact us at the email address above.",
@@ -203,6 +214,8 @@ const t = {
     app2l2: "No user accounts and no upload of gameplay progress to our servers.",
     app2l3: "Gameplay data is stored only on your device (e.g. coins, high scores, settings).",
     app2l4: "Optional in-app purchases are processed by Apple only.",
+    app2l5:
+      "Optional VS duel mode connects two nearby devices directly on the local network; we do not receive or store that session data.",
     app3t: "3. What data do we process?",
     app3Intro: "On-device only (UserDefaults / app storage):",
     app3l1: "Game progress (e.g. coins, unlocked upgrades, music, difficulty, controls)",
@@ -217,16 +230,22 @@ const t = {
       "Consumable coin packs are generally not re-delivered after completion. “Restore Purchases” mainly syncs permanent unlocks and pending transactions for your Apple ID.",
     app5t: "5. No tracking services",
     app5d: "We do not integrate third-party analytics or advertising SDKs and we do not sell personal data.",
-    app6t: "6. Permissions",
-    app6d: "The app does not request camera, microphone, location, or contacts access.",
-    app7t: "7. Children",
-    app7d: "The app is intended for a general audience. We do not knowingly collect personal data from children.",
-    app8t: "8. Your rights",
-    app8d:
+    app6t: "6. VS duel (local multiplayer)",
+    app6l1:
+      "The optional VS duel mode connects two nearby devices directly over the local network using Apple MultipeerConnectivity. No matchmaking servers or user account are required.",
+    app6l2:
+      "During a session, device display names and gameplay data (such as ship position and score) may be exchanged only between the two connected players. Communication is encrypted by Apple’s session layer. We do not receive, store, or analyze this data.",
+    app7t: "7. Permissions",
+    app7d:
+      "For the optional VS duel, the app may ask for Local Network access so two devices can find each other nearby. The app does not request camera, microphone, location, or contacts access.",
+    app8t: "8. Children",
+    app8d: "The app is intended for a general audience. We do not knowingly collect personal data from children.",
+    app9t: "9. Your rights",
+    app9d:
       "You can delete local data at any time by uninstalling the app or resetting app data in iOS Settings. For purchases and refunds, contact",
-    app8Link: "Apple Support",
-    app9t: "9. Changes",
-    app9d: "We may update this policy when needed. The current version is available at the URL listed in App Store Connect.",
+    app9Link: "Apple Support",
+    app10t: "10. Changes",
+    app10d: "We may update this policy when needed. The current version is available at the URL listed in App Store Connect.",
     metaTitleIndex: "R-K8 — Neon Arcade Shooter",
     metaDescIndex:
       "R-K8 — neon arcade shooter for iOS. Waves, power-ups, daily missions, veteran ranks and synthwave style.",
@@ -237,7 +256,8 @@ const t = {
     metaTitlePrivacy: "Privacy — R-K8",
     metaDescPrivacy: "Privacy policy for the R-K8 website: hosting, cookies, contact and your rights.",
     metaTitleAppPrivacy: "App privacy — R-K8",
-    metaDescAppPrivacy: "Privacy for the R-K8 iOS app: on-device storage, in-app purchases and no tracking.",
+    metaDescAppPrivacy:
+      "Privacy for the R-K8 iOS app: on-device storage, in-app purchases, optional local VS mode and no tracking.",
     metaTitleAccess: "Accessibility — R-K8",
     metaDescAccess: "Accessibility on the R-K8 website: measures, limitations and feedback contact.",
   },
