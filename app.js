@@ -706,9 +706,17 @@ function localeFallbackChain(lang) {
 
 function resolveCopy(lang) {
   const merged = {};
+  const marketing =
+    typeof window !== "undefined" && window.__marketingI18n ? window.__marketingI18n : {};
   for (const code of [...localeFallbackChain(lang)].reverse()) {
-    // Locale packs first; app.js extended/full content wins for current marketing copy.
-    Object.assign(merged, localePacks[code] || {}, t[code] || {}, fullContent[code] || {}, extendedContent[code] || {});
+    Object.assign(
+      merged,
+      localePacks[code] || {},
+      t[code] || {},
+      fullContent[code] || {},
+      extendedContent[code] || {},
+      marketing[code] || {}
+    );
   }
   return merged;
 }
