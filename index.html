@@ -13,13 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Syne:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Mochiy+Pop+One&family=Syne:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="anime-site">
     <a class="skip-link" href="#main-content" data-i18n="skip">Zum Inhalt springen</a>
+    <div class="anime-screen-tone" aria-hidden="true"></div>
 
     <header class="site-header">
       <nav class="container nav">
@@ -45,7 +46,11 @@
           <div class="hero-glow hero-glow--cyan"></div>
           <div class="hero-glow hero-glow--magenta"></div>
           <div class="hero-cel-grid"></div>
+          <div class="hero-speedlines"></div>
           <div class="hero-horizon"></div>
+          <span class="hero-spark hero-spark--a"></span>
+          <span class="hero-spark hero-spark--b"></span>
+          <span class="hero-spark hero-spark--c"></span>
         </div>
         <div class="container hero-copy">
           <p class="hero-brand-signal" aria-hidden="true">R-K8</p>
@@ -70,7 +75,7 @@
             <article class="cel-panel cyan" role="listitem">
               <p class="cel-kicker" data-i18n="cabClassicK">Hauptspiel</p>
               <h3 data-i18n="cabClassicT">R-K8 Classic</h3>
-              <p data-i18n="cabClassicD">Mit Kassetten lädst du Batterien auf und sammelst Punkte. Classius-Shift-Platten räumst du nur, wenn dein Score hoch genug ist — mit Combos, Style-Rang und Boss.</p>
+              <p data-i18n="cabClassicD">Mit Kassetten lädst du Batterien auf und sammelst Punkte. Classius-Shift-Platten räumst du nur, wenn dein Score hoch genug ist — mit Combos und Style-Rang.</p>
             </article>
             <article class="cel-panel magenta" role="listitem">
               <p class="cel-kicker" data-i18n="cabMoleK">Reaktion</p>
@@ -115,11 +120,11 @@
             </article>
             <article class="cel-panel magenta">
               <h3 data-i18n="shopCardsT">Sammelkarten</h3>
-              <p data-i18n="shopCardsD">Im Album landen Motive wie Neon-Ticket, Automaten-Schlüssel, Puck-Marke oder Meistersiegel — freigespielt übers Glücksrad und die Spiele.</p>
+              <p data-i18n="shopCardsD">Im Album landen Motive wie Neon-Ticket, Automaten-Schlüssel, Puck-Marke oder Meistersiegel — freigespielt nur übers Glücksrad.</p>
             </article>
             <article class="cel-panel yellow">
               <h3 data-i18n="shopWheelT">Glücksrad</h3>
-              <p data-i18n="shopWheelD">Einmal am Tag drehen. Karten und Belohnungen wandern direkt ins Album.</p>
+              <p data-i18n="shopWheelD">Einmal am Tag drehen: so kommen die Sammelkarten und Belohnungen ins Album.</p>
             </article>
             <article class="cel-panel cyan">
               <h3 data-i18n="shopItemsT">Preise aus der Claw Zone</h3>
@@ -155,7 +160,7 @@
             </div>
             <div>
               <h3 data-i18n="featBossT">Classius Shift</h3>
-              <p data-i18n="featBossD">Der Boss patrouilliert, schießt Noten und rammt. Knapp vorbei heißt Close Call — und füttert deinen Style-Rang.</p>
+              <p data-i18n="featBossD">Classius-Shift-Platten tragen Zahlen — weg kommen sie nur, wenn dein Score höher liegt. Knapp vorbei zählt als Close Call und füttert deinen Style-Rang.</p>
             </div>
           </div>
         </div>
@@ -178,7 +183,7 @@
             </article>
             <article class="step">
               <h3 data-i18n="s3t">3. Shop und Sammlung</h3>
-              <p data-i18n="s3d">Merch ansehen, Glücksrad drehen, Karten ins Album legen, Preise aus der Claw Zone mitnehmen.</p>
+              <p data-i18n="s3d">Merch ansehen, Glücksrad drehen (für Karten), Preise aus der Claw Zone mitnehmen.</p>
             </article>
             <article class="step">
               <h3 data-i18n="s4t">4. Weiterkommen</h3>
