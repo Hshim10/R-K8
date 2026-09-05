@@ -6,13 +6,19 @@
     <meta
       name="description"
       data-i18n-meta="metaDescIndex"
-      content="R-K8 — Synthwave-Arcade für iOS. Lade Batterien mit Kassetten, pulverisiere Classius Shift-Platten, spiele RythmBlock &amp; SynthTennis."
+      content="R-K8 — Anime-Arcade-Halle für iOS. Classic, Cole the Mole, AirHockey, SynthRacing-Club, Claw Zone, Nail It — plus Merch, Sammelkarten und Items."
     />
     <meta name="color-scheme" content="dark" />
-    <title data-i18n="metaTitleIndex">R-K8 — Synthwave-Arcade</title>
+    <title data-i18n="metaTitleIndex">R-K8 — Anime Arcade Hall</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
+  <body class="anime-site">
     <a class="skip-link" href="#main-content" data-i18n="skip">Zum Inhalt springen</a>
 
     <header class="site-header">
@@ -25,317 +31,176 @@
           <select id="language-picker" aria-label="Sprache"></select>
         </label>
         <ul class="nav-links">
-          <li><a href="#gameplay" data-i18n="navGameplay">Gameplay</a></li>
-          <li><a href="#systems" data-i18n="navSystems">Systeme</a></li>
-          <li><a href="#progression" data-i18n="navProgress">Fortschritt</a></li>
+          <li><a href="#hall" data-i18n="navHall">Halle</a></li>
+          <li><a href="#shop" data-i18n="navShop">Shop</a></li>
+          <li><a href="#classic" data-i18n="navClassic">Classic</a></li>
           <li><a href="#how-to-play" data-i18n="navHow">Spielanleitung</a></li>
         </ul>
       </nav>
     </header>
 
     <main id="main-content">
-      <section class="hero">
-        <div class="container hero-grid">
-          <div>
-            <p class="eyebrow" data-i18n="heroEyebrow">Synthwave • Kassetten • Skill</p>
-            <h1 data-i18n="heroTitle">R-K8: Neon-Arcade mit Kassetten, Batterien &amp; Vinyl</h1>
-            <p class="lead" data-i18n="heroLead">
-              Lade rote Batterien mit Kassetten grün, steigere deinen Score und pulverisiere Classius Shift-Platten —
-              plus RythmBlock, SynthTennis und tägliche Sets vom Warm-up bis zur Legende.
-            </p>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="#how-to-play" data-i18n="btnGuide">Spielanleitung</a>
-              <a class="btn btn-secondary" href="#systems" data-i18n="btnFeatures">Alle Features</a>
-            </div>
-            <div class="stat-row" aria-label="Spiel-Highlights">
-              <span class="stat-pill" data-i18n="pillWaves">Wellen &amp; Classius Shift</span>
-              <span class="stat-pill" data-i18n="pillDaily">Tägliches Set</span>
-              <span class="stat-pill" data-i18n="pillStyle">Style-Rang S–D</span>
-            </div>
-          </div>
-          <div class="hero-visual" aria-hidden="true">
-            <div class="hero-stage">
-              <div class="hero-glow hero-glow--cyan"></div>
-              <div class="hero-glow hero-glow--magenta"></div>
-              <div class="hero-horizon"></div>
-              <div class="hero-title-stack">
-                <p class="hero-welcome" data-i18n="heroWelcome">Willkommen bei</p>
-                <p class="hero-game-title">
-                  <span class="hero-game-title__outline" aria-hidden="true">R-K8</span>
-                  <span class="hero-game-title__fill">R-K8</span>
-                </p>
-              </div>
-            </div>
+      <section class="hero hero--anime">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="hero-glow hero-glow--cyan"></div>
+          <div class="hero-glow hero-glow--magenta"></div>
+          <div class="hero-cel-grid"></div>
+          <div class="hero-horizon"></div>
+        </div>
+        <div class="container hero-copy">
+          <p class="hero-brand-signal" aria-hidden="true">R-K8</p>
+          <p class="eyebrow" data-i18n="heroEyebrow">Anime Arcade Hall</p>
+          <h1 data-i18n="heroTitle">Betritt die Neon-Halle</h1>
+          <p class="lead" data-i18n="heroLead">
+            Automaten, Shop-Etage, Merch, Sammelkarten und Items — alles im Anime-Cel-Look.
+            Von R-K8 Classic bis Claw Zone und Nail It.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#hall" data-i18n="btnHall">Halle erkunden</a>
+            <a class="btn btn-secondary" href="#how-to-play" data-i18n="btnGuide">Spielanleitung</a>
           </div>
         </div>
       </section>
 
-      <section id="gameplay" class="section">
+      <section id="hall" class="section">
         <div class="container">
           <div class="section-header">
-            <p class="section-tag" data-i18n="tagGameplay">Kern-Gameplay</p>
-            <h2 data-i18n="secGameplayTitle">Score, Kassetten &amp; Vinyl</h2>
-            <p class="section-lead" data-i18n="secGameplayLead">
-              Kein klassischer Laser-Shooter: Du lädst Batterien mit Kassetten, baust Score auf und räumst
-              Classius Shift-Platten nur, wenn dein Score höher ist als ihre Zahl.
+            <p class="section-tag" data-i18n="tagHall">Arcade Hall</p>
+            <h2 data-i18n="secHallTitle">Cabinets in der Halle</h2>
+            <p class="section-lead" data-i18n="secHallLead">
+              Wische durch die Automaten-Reihe, tippe einen Cabinet an — oder fahr mit dem Lift zur Shop-Etage.
             </p>
           </div>
-          <div class="feature-grid cols-3">
-            <article class="card cyan">
-              <div class="card-icon">▣</div>
+          <div class="cabinet-rail" role="list">
+            <article class="cel-panel cyan" role="listitem">
+              <p class="cel-kicker" data-i18n="cabClassicK">Flagship</p>
+              <h3 data-i18n="cabClassicT">R-K8 Classic</h3>
+              <p data-i18n="cabClassicD">
+                Kassetten laden Batterien, Score steigt, Classius Shift-Platten fallen — Combos, Style-Rang und Boss-Auftritte.
+              </p>
+            </article>
+            <article class="cel-panel magenta" role="listitem">
+              <p class="cel-kicker" data-i18n="cabMoleK">Whack</p>
+              <h3 data-i18n="cabMoleT">Cole the Mole</h3>
+              <p data-i18n="cabMoleD">
+                Reaktions-Arcade: Triff den Maulwurf im richtigen Moment — Tempo und Muster steigen.
+              </p>
+            </article>
+            <article class="cel-panel yellow" role="listitem">
+              <p class="cel-kicker" data-i18n="cabHockeyK">Duel</p>
+              <h3 data-i18n="cabHockeyT">AirHockey</h3>
+              <p data-i18n="cabHockeyD">
+                Lokales Duell oder Training gegen die KI — Best of 3 auf dem Neon-Tisch.
+              </p>
+            </article>
+            <article class="cel-panel cyan" role="listitem">
+              <p class="cel-kicker" data-i18n="cabRacingK">Race</p>
+              <h3 data-i18n="cabRacingT">SynthRacing-Club</h3>
+              <p data-i18n="cabRacingD">
+                Synthwave-Rennen mit Gegnern, Boosts und Club-Atmosphäre auf der Strecke.
+              </p>
+            </article>
+            <article class="cel-panel magenta" role="listitem">
+              <p class="cel-kicker" data-i18n="cabClawK">Prize</p>
+              <h3 data-i18n="cabClawT">Claw Zone</h3>
+              <p data-i18n="cabClawD">
+                Greifarm-Cabinet: ziele, greife, gewinne Plüsch, Walkman, Neon-Schilder und mehr — mit Bon &amp; Gold-Bon.
+              </p>
+            </article>
+            <article class="cel-panel yellow" role="listitem">
+              <p class="cel-kicker" data-i18n="cabNailK">Timing</p>
+              <h3 data-i18n="cabNailT">Nail It</h3>
+              <p data-i18n="cabNailD">
+                Timing-Arcade: treffe die Sweet Spot-Zone, schlage den Nagel ein — später bewegt sich sogar der Hammer.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="shop" class="section alt">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-tag" data-i18n="tagShop">Obere Etage</p>
+            <h2 data-i18n="secShopTitle">Shop, Merch &amp; Sammelkarten</h2>
+            <p class="section-lead" data-i18n="secShopLead">
+              Über den Lift erreichst du die Shop-Etage: Regal, Merch-Stand, Glücksrad und Support — Items, Karten und Cosmetics.
+            </p>
+          </div>
+          <div class="shop-grid">
+            <article class="cel-panel cyan">
+              <h3 data-i18n="shopMerchT">R-K8 Merch</h3>
+              <p data-i18n="shopMerchD">
+                Anime-Figur, Tasse, Flasche, Plüsch, Modellauto und Klemmsteine — Hallen-Merchandise zum Sammeln.
+              </p>
+            </article>
+            <article class="cel-panel magenta">
+              <h3 data-i18n="shopCardsT">Sammelkarten &amp; Album</h3>
+              <p data-i18n="shopCardsD">
+                Card Album mit Neon-Ticket, Automaten-Schlüssel, Puck-Marke, Maulwurf-Stempel, Nagel-Abzeichen,
+                Greifarm-Bon, Synth-Chip, Hallenpass, Münzstapel und Meistersiegel.
+              </p>
+            </article>
+            <article class="cel-panel yellow">
+              <h3 data-i18n="shopWheelT">Glücksrad</h3>
+              <p data-i18n="shopWheelD">
+                Täglicher Spin am Lucky Wheel — Karten und Belohnungen landen direkt in deinem Album.
+              </p>
+            </article>
+            <article class="cel-panel cyan">
+              <h3 data-i18n="shopItemsT">Items &amp; Claw-Preise</h3>
+              <p data-i18n="shopItemsD">
+                In der Claw Zone: Teddy, Walkman, Armbanduhr, Kassette, Neon-Schild, Mini-Arcade —
+                plus Bons für weitere Versuche.
+              </p>
+            </article>
+            <article class="cel-panel magenta">
+              <h3 data-i18n="shopShelfT">Regal &amp; Münz-Shop</h3>
+              <p data-i18n="shopShelfD">
+                Permanente Upgrades, Musikbibliothek und Skins — Münzen aus Runs und Sets investieren.
+              </p>
+            </article>
+            <article class="cel-panel yellow">
+              <h3 data-i18n="shopProgressT">Sets &amp; Ränge</h3>
+              <p data-i18n="shopProgressD">
+                Tägliche Sets, Veteran-Ränge von Warm-up bis Legende, Style-Rang S–D und lokale Bestenliste — alles offline.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="classic" class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-tag" data-i18n="tagClassic">Flagship Loop</p>
+            <h2 data-i18n="secClassicTitle">R-K8 Classic im Fokus</h2>
+            <p class="section-lead" data-i18n="secClassicLead">
+              Die Kernschleife: Batterien laden, Score pushen, Platten nur mit höherem Score pulverisieren —
+              Power-Ups, Combos und Classius Shift.
+            </p>
+          </div>
+          <div class="feature-strip">
+            <div>
               <h3 data-i18n="featCoreT">Kernschleife</h3>
               <p data-i18n="featCoreD">
-                Rote Batterien mit Kassetten aufladen, bis sie grün werden — einsammeln hebt deinen Score.
-                Classius Shift-Platten pulverisierst du nur, wenn dein Score höher ist als ihre Zahl.
+                Rote Batterien mit Kassetten aufladen, bis sie grün werden — einsammeln hebt den Score.
+                Classius Shift-Platten nur mit höherem Score freimachen.
               </p>
-            </article>
-            <article class="card magenta">
-              <div class="card-icon">▲</div>
-              <h3 data-i18n="featWavesT">Wellen &amp; Formationen</h3>
-              <p data-i18n="featWavesD">
-                Classius Shift-Platten fallen als Vinyl-Regen oder Invader-Gitter. Alle paar Abschüsse steigt die
-                Intensität. Alle 9 Wellen betritt Classius Shift die Bühne.
-              </p>
-            </article>
-            <article class="card yellow">
-              <div class="card-icon">✦</div>
-              <h3 data-i18n="featCombosT">Combo &amp; Power-Kisten</h3>
+            </div>
+            <div>
+              <h3 data-i18n="featCombosT">Combos &amp; Power-Ups</h3>
               <p data-i18n="featCombosD">
-                Vier Classius Shift-Platten innerhalb von 2 Sekunden freimachen spawnt sofort ein Power-up.
-                Fallende Kisten lädst du ebenfalls mit Kassetten, bis sie aufgehen.
+                Vier Platten in zwei Sekunden → Power-up. Zeitlupe, Schnell-Ladung und Freeze aus Kisten —
+                plus permanente Upgrades im Münz-Shop.
               </p>
-            </article>
-            <article class="card purple">
-              <div class="card-icon">!</div>
-              <h3 data-i18n="featCloseCallsT">Close Calls &amp; Style-Rang</h3>
-              <p data-i18n="featCloseCallsD">
-                Knapp an Platten, Boss-Noten oder Ram-Angriffen vorbei? Style-Punkte bringen am Run-Ende einen
-                Rang von D bis S — unabhängig vom Score.
-              </p>
-            </article>
-            <article class="card green">
-              <div class="card-icon">◎</div>
-              <h3 data-i18n="featCoinsT">Münzen &amp; Shop</h3>
-              <p data-i18n="featCoinsD">
-                Platten und Belohnungen bringen Münzen. Im Menü kaufst du permanente Upgrades, Musiktracks und
-                Skins — oder erfüllst damit Tages-Sets.
-              </p>
-            </article>
-            <article class="card cyan">
-              <div class="card-icon">◆</div>
-              <h3 data-i18n="featDifficultyT">Drei Schwierigkeitsgrade</h3>
-              <p data-i18n="featDifficultyD">
-                Entspannt (langsamer, ruhigeres Spawn-Tempo), Klassisch (Default) oder Fortgeschritten (dichter,
-                schneller, seltener Kisten). Jederzeit in Ops umstellbar.
-              </p>
-            </article>
-            <article class="card magenta">
-              <div class="card-icon">☰</div>
-              <h3 data-i18n="featControlsT">Tippen oder Wischen</h3>
-              <p data-i18n="featControlsD">
-                Bewege dein Schiff per Tippen oder Wischen. Kassetten feuern automatisch — du konzentrierst dich
-                auf Position, Batterien und Timing.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="systems" class="section alt">
-        <div class="container">
-          <div class="section-header">
-            <p class="section-tag" data-i18n="tagSystems">Power &amp; Build</p>
-            <h2 data-i18n="secSystemsTitle">Power-Ups, Upgrades &amp; Nebenmodi</h2>
-            <p class="section-lead" data-i18n="secSystemsLead">
-              Im Run sammelst du temporäre Power-Ups aus Kisten. Im Hangar kaufst du dauerhafte Upgrades.
-              Zusätzlich: RythmBlock und SynthTennis.
-            </p>
-          </div>
-
-          <h3 data-i18n="featPowerUpsTitle">Run-Power-Ups</h3>
-          <div class="feature-grid cols-3" style="margin-top: 0.75rem; margin-bottom: 1.5rem">
-            <article class="card cyan">
-              <div class="card-icon">⏱</div>
-              <h3 data-i18n="puSlowMoT">Zeitlupe</h3>
-              <p data-i18n="puSlowMoD">
-                Blau: Classius Shift-Platten und Batterien/Münzen bewegen sich langsamer — ideal zum Neu-Positionieren.
-              </p>
-            </article>
-            <article class="card yellow">
-              <div class="card-icon">⚡</div>
-              <h3 data-i18n="puRapidT">Schnell-Ladung</h3>
-              <p data-i18n="puRapidD">
-                Gelb: Deine Kassetten laden Ziele kurz deutlich schneller — stark für Combos und Boss-Phasen.
-              </p>
-            </article>
-            <article class="card purple">
-              <div class="card-icon">❄</div>
-              <h3 data-i18n="puFreezeT">Freeze</h3>
-              <p data-i18n="puFreezeD">
-                Violett: Friert Platten, Schüsse und fallende Items ein — dein Schiff bleibt steuerbar.
-                Belohnungsmünzen fliegen weiter.
-              </p>
-            </article>
-          </div>
-
-          <h3 data-i18n="featUpgradesTitle">Permanente Upgrades (Münz-Shop)</h3>
-          <div class="feature-grid cols-3" style="margin-top: 0.75rem; margin-bottom: 1.5rem">
-            <article class="card magenta">
-              <div class="card-icon">⋔</div>
-              <h3 data-i18n="upTriT">Kassetten-Rage</h3>
-              <p data-i18n="upTriD">
-                Schießt Kassetten in drei Richtungen — vorwärts, links und rechts.
-              </p>
-            </article>
-            <article class="card green">
-              <div class="card-icon">+10</div>
-              <h3 data-i18n="upStartT">Starthilfe</h3>
-              <p data-i18n="upStartD">
-                Jede Runde startet mit Score 10 — früher Score und früheres Overload-Potenzial.
-              </p>
-            </article>
-            <article class="card cyan">
-              <div class="card-icon">🛡</div>
-              <h3 data-i18n="upGuardT">Lasst mich in Ruhe!</h3>
-              <p data-i18n="upGuardD">
-                Fängt zweimal Treffer von stärkeren Platten ab, deren Wert höher ist als dein Score.
-              </p>
-            </article>
-            <article class="card yellow">
-              <div class="card-icon">⏳</div>
-              <h3 data-i18n="upTimeT">Lass dir Zeit</h3>
-              <p data-i18n="upTimeD">
-                Temporäre Power-Ups halten 2 Sekunden länger.
-              </p>
-            </article>
-            <article class="card purple">
-              <div class="card-icon">◎</div>
-              <h3 data-i18n="upScanT">Doppelpack</h3>
-              <p data-i18n="upScanD">
-                Sichere Platten grün, gefährliche rot. Overload schon ab Score 45 statt 60.
-              </p>
-            </article>
-            <article class="card green">
-              <div class="card-icon">⟲</div>
-              <h3 data-i18n="upMagnetT">Zieht euch warm an!</h3>
-              <p data-i18n="upMagnetD">
-                Zieht fallende Power-ups magnetisch zu deinem Schiff.
-              </p>
-            </article>
-            <article class="card cyan">
-              <div class="card-icon">♫</div>
-              <h3 data-i18n="featMusicT">Musikbibliothek</h3>
-              <p data-i18n="featMusicD">
-                Kauf zusätzliche Synthwave-Tracks und wähle Sound für Menü und Gameplay. Ausgerüstete Tracks
-                erscheinen in der unteren Menüleiste.
-              </p>
-            </article>
-            <article class="card magenta">
-              <div class="card-icon">▤</div>
-              <h3 data-i18n="featStudioT">RythmBlock</h3>
-              <p data-i18n="featStudioD">
-                Beat-Match-Nebenmodus: Tippe Spalten, kläre drei gleiche Farben übereinander und halte bis zur
-                Überladung durch — Tempo steigt sanft.
-              </p>
-            </article>
-            <article class="card yellow">
-              <div class="card-icon">◎</div>
-              <h3 data-i18n="featTennisT">SynthTennis</h3>
-              <p data-i18n="featTennisD">
-                Lokales 2P-Duell oder Training gegen KI: Spiel den Ball mit dem Schläger zurück. Best of 3 —
-                Auszeit von Classius’ Set.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="progression" class="section">
-        <div class="container">
-          <div class="section-header">
-            <p class="section-tag" data-i18n="tagProgress">Langzeit-Fortschritt</p>
-            <h2 data-i18n="secProgressTitle">Sets, Ränge &amp; Belohnungen</h2>
-            <p class="section-lead" data-i18n="secProgressLead">
-              Tägliche Sets, Veteran-Ränge mit Skins, Sektoren der Galaxie-Tour und lokale Bestenlisten —
-              alles offline auf dem Gerät.
-            </p>
-          </div>
-
-          <div class="feature-grid">
-            <article class="card magenta">
-              <div class="card-icon">☀</div>
-              <h3 data-i18n="featDailyT">Tägliches Set</h3>
-              <p data-i18n="featDailyD">
-                Jeden Tag eine neue Aufgabe — z. B. Classius Shift-Platten pulverisieren, Wellen erreichen,
-                Close Calls landen oder einen Classius-Auftritt beenden. Abschluss bringt Münzen und zählt für deinen Rang.
-              </p>
-            </article>
-            <article class="card purple">
-              <div class="card-icon">★</div>
-              <h3 data-i18n="featVeteranT">Veteran-Ränge &amp; Skins</h3>
-              <p data-i18n="featVeteranD">
-                Abgeschlossene Tages-Sets steigern deinen Rang: Warm-up → Support → Remixer → Headliner → Legende.
-                Höhere Ränge schalten Skins frei — von RetroSonic bis LEMTA GT.
-              </p>
-              <div class="rank-ladder" aria-label="Veteran-Ränge">
-                <div class="rank-item">
-                  <span class="rank-badge recruit">W</span>
-                  <span data-i18n="rankRecruit">Warm-up</span>
-                  <span data-i18n="rankRecruitD">Start</span>
-                </div>
-                <div class="rank-item">
-                  <span class="rank-badge pilot">S</span>
-                  <span data-i18n="rankPilot">Support</span>
-                  <span>3 <span data-i18n="rankDays">Sets</span></span>
-                </div>
-                <div class="rank-item">
-                  <span class="rank-badge ace">R</span>
-                  <span data-i18n="rankAce">Remixer</span>
-                  <span>7 <span data-i18n="rankDays">Sets</span></span>
-                </div>
-                <div class="rank-item">
-                  <span class="rank-badge commander">H</span>
-                  <span data-i18n="rankCommander">Headliner</span>
-                  <span>15 <span data-i18n="rankDays">Sets</span></span>
-                </div>
-                <div class="rank-item">
-                  <span class="rank-badge legend">L</span>
-                  <span data-i18n="rankLegend">Legende</span>
-                  <span>30 <span data-i18n="rankDays">Sets</span></span>
-                </div>
-              </div>
-            </article>
-            <article class="card yellow">
-              <div class="card-icon">S</div>
-              <h3 data-i18n="featStyleT">Style-Rang (pro Runde)</h3>
-              <p data-i18n="featStyleD">
-                Close Calls sammeln Style-Punkte. Am Game-Over siehst du deinen Buchstaben-Rang von D bis S —
-                unabhängig vom Score.
-              </p>
-            </article>
-            <article class="card green">
-              <div class="card-icon">🏆</div>
-              <h3 data-i18n="featRewardsT">Leistungen &amp; Tour</h3>
-              <p data-i18n="featRewardsD">
-                Im Belohnungsmenü: Beat-Jäger, Rekordjäger, Fortgeschritten-Veteran, Kaufrausch, Sektor-Pionier,
-                Tour-Headliner und mehr. Freigeschaltete Einträge leuchten auf.
-              </p>
-            </article>
-            <article class="card cyan">
-              <div class="card-icon">📊</div>
-              <h3 data-i18n="featLeaderboardT">Lokale Bestenliste</h3>
-              <p data-i18n="featLeaderboardD">
-                Top-Runs bleiben auf dem Gerät — optional mit Namen. Kein Account, keine Cloud nötig.
-              </p>
-            </article>
-            <article class="card magenta">
-              <div class="card-icon">👾</div>
+            </div>
+            <div>
               <h3 data-i18n="featBossT">Classius Shift</h3>
               <p data-i18n="featBossD">
-                Der Endboss betritt die Bühne: Patrouille, Noten-Schüsse, Ram-Angriffe und ab Enrage ein
-                Energy-Volley — den Ball zurückspielen. Sektoren der Tour schalten sich frei.
+                Boss-Auftritt mit Patrouille, Noten und Ram-Angriffen — Close Calls füttern deinen Style-Rang.
               </p>
-            </article>
+            </div>
           </div>
         </div>
       </section>
@@ -348,31 +213,27 @@
           </div>
           <div class="steps">
             <article class="step">
-              <h3 data-i18n="s1t">1. Steuerung &amp; Schwierigkeit</h3>
+              <h3 data-i18n="s1t">1. Halle betreten</h3>
               <p data-i18n="s1d">
-                Unter Ops: Tippen oder Wischen, Entspannt / Klassisch / Fortgeschritten. Sound, Sprache und
-                Datenschutz nach Bedarf.
+                Vom Startscreen in die Arcade Hall. Wähle ein Cabinet oder nimm den Lift zur Shop-Etage.
               </p>
             </article>
             <article class="step">
-              <h3 data-i18n="s2t">2. Tägliches Set checken</h3>
+              <h3 data-i18n="s2t">2. Modus spielen</h3>
               <p data-i18n="s2d">
-                Am Startbildschirm siehst du das heutige Set. Plane den Run — Boss-Auftritte oder Close Calls
-                können das Ziel direkt erfüllen.
+                Classic, Cole the Mole, AirHockey, SynthRacing-Club, Claw Zone oder Nail It — jeweils eigener Flow.
               </p>
             </article>
             <article class="step">
-              <h3 data-i18n="s3t">3. Set starten</h3>
+              <h3 data-i18n="s3t">3. Shop &amp; Sammlung</h3>
               <p data-i18n="s3d">
-                Lade Batterien mit Kassetten grün und sammle sie. Pulverisiere Platten nur mit höherem Score.
-                Nutze Kisten, Combos und Overload (Blitz → grüner Kreis).
+                Merch anschauen, Glücksrad drehen, Karten ins Album legen, Items und Bons aus der Claw Zone sichern.
               </p>
             </article>
             <article class="step">
-              <h3 data-i18n="s4t">4. Upgrades, Modi &amp; Highscore</h3>
+              <h3 data-i18n="s4t">4. Fortschritt pushen</h3>
               <p data-i18n="s4d">
-                Investiere Münzen in Upgrades, Musik und Skins. Probiere RythmBlock und SynthTennis. Jage
-                Style-Rang S und deinen lokalen Rekord.
+                Tägliche Sets, Veteran-Ränge, Skins, Musik und lokalen Highscore — alles auf dem Gerät.
               </p>
             </article>
           </div>
