@@ -216,10 +216,20 @@ body::before {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center 28%;
   display: block;
   pointer-events: none;
   z-index: 0;
+}
+
+.hero-video {
+  background: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-video {
+    display: none;
+  }
 }
 
 .hero-bg-shade {
@@ -229,9 +239,9 @@ body::before {
   pointer-events: none;
   background: linear-gradient(
     180deg,
-    rgba(5, 3, 12, 0.05) 0%,
-    rgba(5, 3, 12, 0.22) 45%,
-    rgba(5, 3, 12, 0.72) 100%
+    rgba(5, 3, 12, 0.08) 0%,
+    rgba(5, 3, 12, 0.28) 48%,
+    rgba(5, 3, 12, 0.78) 100%
   );
 }
 
