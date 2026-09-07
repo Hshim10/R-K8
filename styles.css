@@ -224,9 +224,9 @@ body::before {
   pointer-events: none;
   background: linear-gradient(
     180deg,
-    rgba(5, 3, 12, 0.18) 0%,
-    rgba(5, 3, 12, 0.55) 48%,
-    rgba(5, 3, 12, 0.94) 100%
+    rgba(5, 3, 12, 0.08) 0%,
+    rgba(5, 3, 12, 0.28) 42%,
+    rgba(5, 3, 12, 0.78) 100%
   );
 }
 
