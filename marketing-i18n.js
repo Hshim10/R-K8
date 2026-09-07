@@ -29,7 +29,7 @@ window.__marketingI18n = {
     cabRacingK: "Rennen",
     cabRacingT: "SynthRacing-Club",
     cabRacingD: "Synthwave-Rennen mit Gegnern und Boosts — Club-Feeling inklusive.",
-    cabClawK: "Greifer",
+    cabClawK: "Greifarm",
     cabClawT: "Claw Zone",
     cabClawD: "Ziel, greif, hoff auf Plüsch, Walkman oder Neon-Schild. Mit Bon und Gold-Bon gibt’s weitere Versuche.",
     cabNailK: "Timing",
