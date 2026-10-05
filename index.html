@@ -5,224 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      data-i18n-meta="metaDescIndex"
-      content="R-K8 — Anime-Arcade-Halle fürs iPhone: Automaten, Club-Tanzspiel, Ruuun!, Mini-Autos zum Sammeln, Merch und Karten."
+      content="aCRAZY Game Studio — unabhängiges Studio für iOS-Apps: R-K8 und Blattgeist. Lokal, ohne Tracking. Impressum und Datenschutz."
     />
     <meta name="color-scheme" content="dark" />
-    <title data-i18n="metaTitleIndex">R-K8 — Anime-Arcade für iOS</title>
+    <title>aCRAZY Game Studio — Apps für iOS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800&family=Mochiy+Pop+One&family=Syne:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Syne:wght@700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body class="anime-site">
-    <a class="skip-link" href="#main-content" data-i18n="skip">Zum Inhalt springen</a>
-    <div class="anime-screen-tone" aria-hidden="true"></div>
+  <body class="studio-site">
+    <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+    <div class="studio-grain" aria-hidden="true"></div>
 
     <header class="site-header">
       <nav class="container nav">
-        <a class="brand" href="./index.html" aria-label="Startseite">
-          <span class="brand-mark">R-K8</span>
+        <a class="brand" href="./index.html" aria-label="aCRAZY Game Studio — Startseite">
+          <span class="brand-mark">aCRAZY</span>
+          <span class="brand-sub">Game Studio</span>
         </a>
-        <label class="lang-wrap">
-          <span data-i18n="langLabel">Sprache</span>
-          <select id="language-picker" aria-label="Sprache"></select>
-        </label>
         <ul class="nav-links">
-          <li><a href="#hall" data-i18n="navHall">Halle</a></li>
-          <li><a href="#shop" data-i18n="navShop">Shop</a></li>
-          <li><a href="#classic" data-i18n="navClassic">Classic</a></li>
-          <li><a href="#how-to-play" data-i18n="navHow">Anleitung</a></li>
+          <li><a href="#apps">Apps</a></li>
+          <li><a href="#privacy">Datenschutz</a></li>
+          <li><a href="./support.html">Support</a></li>
         </ul>
       </nav>
     </header>
 
     <main id="main-content">
-      <section class="hero hero--anime">
-        <div class="hero-bg" aria-hidden="true">
-          <img
-            class="hero-photo"
-            src="./hero-neon-hall.jpg"
-            alt=""
-            width="1200"
-            height="2594"
-            decoding="async"
-            fetchpriority="high"
-          />
-          <div class="hero-bg-shade"></div>
-          <div class="hero-glow hero-glow--cyan"></div>
-          <div class="hero-glow hero-glow--magenta"></div>
-          <div class="hero-cel-grid"></div>
-          <div class="hero-speedlines"></div>
-          <div class="hero-horizon"></div>
-          <span class="hero-spark hero-spark--a"></span>
-          <span class="hero-spark hero-spark--b"></span>
-          <span class="hero-spark hero-spark--c"></span>
+      <section class="hero hero--studio">
+        <div class="hero-studio-bg" aria-hidden="true">
+          <div class="hero-orb hero-orb--a"></div>
+          <div class="hero-orb hero-orb--b"></div>
+          <div class="hero-mesh"></div>
         </div>
         <div class="container hero-copy">
-          <p class="hero-brand-signal" aria-hidden="true">R-K8</p>
-          <p class="eyebrow" data-i18n="heroEyebrow">Anime-Arcade</p>
-          <h1 data-i18n="heroTitle">Willkommen in der Neon-Halle</h1>
-          <p class="lead" data-i18n="heroLead">Automaten in der Halle, Tanzspiel im Club, Mini-Autos zum Sammeln — und Ruuun! als endlose Verfolgungsjagd. Alles im Anime-Stil.</p>
+          <p class="hero-brand-signal">aCRAZY Game Studio</p>
+          <h1>Apps mit Charakter.<br />Gebaut fürs iPhone.</h1>
+          <p class="lead">
+            Unabhängiges Studio aus Österreich. Wir machen Spiele und ruhige Alltags-Apps —
+            ohne Server-Zwang, ohne Tracking-Lärm.
+          </p>
           <div class="cta-row">
-            <a class="btn btn-primary" href="#hall" data-i18n="btnHall">Zur Halle</a>
-            <a class="btn btn-secondary" href="#how-to-play" data-i18n="btnGuide">Kurz erklärt</a>
+            <a class="btn btn-primary" href="#apps">Unsere Apps</a>
+            <a class="btn btn-secondary" href="#privacy">Datenschutz</a>
           </div>
         </div>
       </section>
 
-      <section id="hall" class="section">
+      <section id="apps" class="section">
         <div class="container">
           <div class="section-header">
-            <p class="section-tag" data-i18n="tagHall">Die Halle</p>
-            <h2 data-i18n="secHallTitle">Die Automaten</h2>
-            <p class="section-lead" data-i18n="secHallLead">Wisch dich durch die Automaten. Mit dem Lift erreichst du den Shop eine Etage höher und den Club eine Etage tiefer.</p>
+            <p class="section-tag">Portfolio</p>
+            <h2>Zwei Welten. Ein Studio.</h2>
+            <p class="section-lead">
+              Von Neon-Arcade bis leiser Begleiter — unterschiedliche Apps, dieselbe Haltung:
+              klar, lokal, respektvoll mit deinen Daten.
+            </p>
           </div>
-          <div class="cabinet-rail" role="list">
-            <article class="cel-panel cyan" role="listitem">
-              <p class="cel-kicker" data-i18n="cabClassicK">Hauptspiel</p>
-              <h3 data-i18n="cabClassicT">R-K8 Classic</h3>
-              <p data-i18n="cabClassicD">Mit Kassetten lädst du Batterien auf und sammelst Punkte. Classius-Shift-Platten räumst du nur, wenn dein Score hoch genug ist — Combos inklusive.</p>
-            </article>
-            <article class="cel-panel magenta" role="listitem">
-              <p class="cel-kicker" data-i18n="cabMoleK">Reaktion</p>
-              <h3 data-i18n="cabMoleT">Cole the Mole</h3>
-              <p data-i18n="cabMoleD">Triff den Maulwurf im richtigen Moment. Tempo und Muster werden von Runde zu Runde kniffliger.</p>
-            </article>
-            <article class="cel-panel yellow" role="listitem">
-              <p class="cel-kicker" data-i18n="cabHockeyK">Duell</p>
-              <h3 data-i18n="cabHockeyT">AirHockey</h3>
-              <p data-i18n="cabHockeyD">Zu zweit am gleichen Gerät oder gegen die KI — Best of 3 auf dem Neon-Tisch.</p>
-            </article>
-            <article class="cel-panel cyan" role="listitem">
-              <p class="cel-kicker" data-i18n="cabRacingK">Rennen</p>
-              <h3 data-i18n="cabRacingT">SynthRacing-Club</h3>
-              <p data-i18n="cabRacingD">Synthwave-Rennen mit Gegnern und Boosts — Club-Feeling inklusive.</p>
-            </article>
-            <article class="cel-panel magenta" role="listitem">
-              <p class="cel-kicker" data-i18n="cabClawK">Greifarm</p>
-              <h3 data-i18n="cabClawT">Claw Zone</h3>
-              <p data-i18n="cabClawD">Ziel, greif, hoff auf Plüsch, Walkman, Neon-Schild oder Mini-Autos. Mit Bon und Gold-Bon gibt’s weitere Versuche.</p>
-            </article>
-            <article class="cel-panel yellow" role="listitem">
-              <p class="cel-kicker" data-i18n="cabNailK">Timing</p>
-              <h3 data-i18n="cabNailT">Nail It</h3>
-              <p data-i18n="cabNailD">Triff die Trefferzone und schlag den Nagel ein. Später bewegt sich auch der Hammer — dann wird’s eng.</p>
-            </article>
-            <article class="cel-panel cyan" role="listitem">
-              <p class="cel-kicker" data-i18n="cabRuuunK">Verfolgung</p>
-              <h3 data-i18n="cabRuuunT">Ruuun!</h3>
-              <p data-i18n="cabRuuunD">Endlose Verfolgungsjagd: du rennst automatisch, wischst nach oben zum Springen und nach unten zum Ducken. Der Verfolger rückt bei Fehlern näher.</p>
-            </article>
-            <article class="cel-panel magenta" role="listitem">
-              <p class="cel-kicker" data-i18n="cabUteK">Ausweichen</p>
-              <h3 data-i18n="cabUteT">Kawashite Ute</h3>
-              <p data-i18n="cabUteD">Weiche den Schüssen aus und gib Feuer zurück. Zieh deine Figur zwischen den Bahnen und tipp gleichzeitig Feuer — drei Leben, das Tempo steigt.</p>
-            </article>
-            <article class="cel-panel yellow" role="listitem">
-              <p class="cel-kicker" data-i18n="cabClubK">Tanz</p>
-              <h3 data-i18n="cabClubT">Club</h3>
-              <p data-i18n="cabClubD">Eine Etage tiefer: Band, Crowd und Beat-Pads. Tippe und halte im Takt — beweise deine Tanzfähigkeiten.</p>
-            </article>
-          </div>
-        </div>
-      </section>
 
-      <section id="shop" class="section alt">
-        <div class="container">
-          <div class="section-header">
-            <p class="section-tag" data-i18n="tagShop">Obere Etage</p>
-            <h2 data-i18n="secShopTitle">Shop, Merch und Karten</h2>
-            <p class="section-lead" data-i18n="secShopLead">Oben findest du Regal, Merch-Stand, Glücksrad und Support. Hier sammelst du Karten, Mini-Autos, Items und Cosmetics.</p>
-          </div>
-          <div class="shop-grid">
-            <article class="cel-panel cyan">
-              <h3 data-i18n="shopMerchT">R-K8 Merch</h3>
-              <p data-i18n="shopMerchD">Figur, Tasse, Flasche, Plüsch, Modellauto, Klemmsteine — kleine Hallen-Souvenirs zum Mitnehmen.</p>
+          <div class="app-stack">
+            <article class="app-feature app-feature--arcade">
+              <div class="app-feature-copy">
+                <p class="app-kicker">Spiel · iOS</p>
+                <h3>R-K8</h3>
+                <p>
+                  Anime-Arcade-Halle mit Automaten, Club, Shop und endlosen Mini-Runs.
+                  Spielen, sammeln, weiterkommen — alles bleibt auf deinem Gerät.
+                </p>
+                <ul class="app-points">
+                  <li>Classic, Club, Ruuun! und mehr</li>
+                  <li>Merch, Karten und Mini-Autos</li>
+                  <li>Fortschritt lokal gespeichert</li>
+                </ul>
+                <div class="app-links">
+                  <a class="text-link" href="./privacy-policy.html">App-Datenschutz R-K8</a>
+                  <a class="text-link" href="./support.html">Support</a>
+                </div>
+              </div>
+              <div class="app-feature-visual" aria-hidden="true">
+                <span class="visual-label">R-K8</span>
+                <span class="visual-hint">Neon · Arcade · Action</span>
+              </div>
             </article>
-            <article class="cel-panel magenta">
-              <h3 data-i18n="shopCardsT">Sammelkarten</h3>
-              <p data-i18n="shopCardsD">Im Album landen Motive wie Neon-Ticket, Automaten-Schlüssel, Puck-Marke oder Meistersiegel — freigespielt nur übers Glücksrad.</p>
-            </article>
-            <article class="cel-panel yellow">
-              <h3 data-i18n="shopWheelT">Glücksrad</h3>
-              <p data-i18n="shopWheelD">Einmal am Tag drehen: Sammelkarten, Mini-Autos und Belohnungen landen so in deiner Sammlung.</p>
-            </article>
-            <article class="cel-panel cyan">
-              <h3 data-i18n="shopItemsT">Preise aus der Claw Zone</h3>
-              <p data-i18n="shopItemsD">Teddy, Walkman, Uhr, Kassette, Neon-Schild, Mini-Arcade und Mini-Autos — plus Bons für weitere Versuche.</p>
-            </article>
-            <article class="cel-panel magenta">
-              <h3 data-i18n="shopMiniCarsT">Mini-Autos</h3>
-              <p data-i18n="shopMiniCarsD">Blister-Mini-Autos aus Greifarm und Glücksrad — sammle sie in der Mini-Auto-Garage und schau sie dir groß an.</p>
-            </article>
-            <article class="cel-panel yellow">
-              <h3 data-i18n="shopShelfT">Regal und Münz-Shop</h3>
-              <p data-i18n="shopShelfD">Dauerhafte Upgrades, Tracks und Skins — bezahlt mit Münzen aus den Spielen.</p>
-            </article>
-            <article class="cel-panel cyan">
-              <h3 data-i18n="shopProgressT">Ränge und Bestenliste</h3>
-              <p data-i18n="shopProgressD">Ränge von Warm-up bis Legende und eine Bestenliste, die nur auf dem Gerät bleibt.</p>
+
+            <article class="app-feature app-feature--leaf">
+              <div class="app-feature-copy">
+                <p class="app-kicker">Alltag · iOS</p>
+                <h3>Blattgeist</h3>
+                <p>
+                  Drei kurze Entdeckungen am Tag — Natur, Sprache, Alltag.
+                  Ein Begleiter wächst mit, die Bibliothek hält fest, was bleibt.
+                  Warm, kurz, ohne Druck.
+                </p>
+                <ul class="app-points">
+                  <li>Tages-Set und Bibliothek</li>
+                  <li>Optionaler Tagesimpuls</li>
+                  <li>Kein Konto, kein Tracking</li>
+                </ul>
+                <div class="app-links">
+                  <a class="text-link" href="./privacy-blattgeist.html">App-Datenschutz Blattgeist</a>
+                  <a class="text-link" href="./support.html">Support</a>
+                </div>
+              </div>
+              <div class="app-feature-visual app-feature-visual--leaf" aria-hidden="true">
+                <span class="visual-label">Blattgeist</span>
+                <span class="visual-hint">Ruhig · Lokal · Begleiter</span>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="classic" class="section">
-        <div class="container">
-          <div class="section-header">
-            <p class="section-tag" data-i18n="tagClassic">Hauptspiel</p>
-            <h2 data-i18n="secClassicTitle">So funktioniert R-K8 Classic</h2>
-            <p class="section-lead" data-i18n="secClassicLead">Batterien aufladen, Punkte sammeln, Platten nur mit genug Score wegräumen — dazu Power-ups, Combos und Classius Shift.</p>
-          </div>
-          <div class="feature-strip">
-            <div>
-              <h3 data-i18n="featCoreT">Das Prinzip</h3>
-              <p data-i18n="featCoreD">Rote Batterien werden mit Kassetten grün. Einsammeln erhöht den Score. Platten zerstörst du nur, wenn dein Score höher ist als ihre Zahl.</p>
-            </div>
-            <div>
-              <h3 data-i18n="featCombosT">Combos und Power-ups</h3>
-              <p data-i18n="featCombosD">Vier Platten in kurzer Zeit freimachen bringt ein Power-up. Es gibt Zeitlupe, Schnell-Ladung und Freeze — plus dauerhafte Upgrades im Shop.</p>
-            </div>
-            <div>
-              <h3 data-i18n="featBossT">Classius Shift</h3>
-              <p data-i18n="featBossD">Classius-Shift-Platten tragen Zahlen — weg kommen sie nur, wenn dein Score höher liegt. Knapp vorbei zählt als Close Call.</p>
+      <section id="privacy" class="section section--privacy">
+        <div class="container privacy-band">
+          <div class="privacy-band-copy">
+            <p class="section-tag">Datenschutz</p>
+            <h2>Deine Daten bleiben bei dir.</h2>
+            <p>
+              aCRAZY Game Studio baut Apps ohne Analyse-SDKs und ohne Lern- oder Spielstand-Server.
+              Fortschritt und Einstellungen liegen lokal auf dem Gerät. Details stehen in den
+              App-Datenschutzseiten und in der Website-Datenschutzerklärung.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="./datenschutz.html">Website-Datenschutz</a>
+              <a class="btn btn-secondary" href="./privacy-policy.html">R-K8</a>
+              <a class="btn btn-secondary" href="./privacy-blattgeist.html">Blattgeist</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="how-to-play" class="section alt">
+      <section id="studio" class="section alt">
         <div class="container">
           <div class="section-header">
-            <p class="section-tag" data-i18n="tagGuide">Einstieg</p>
-            <h2 data-i18n="howTitle">Kurz erklärt</h2>
+            <p class="section-tag">Studio</p>
+            <h2>aCRAZY Game Studio</h2>
+            <p class="section-lead">
+              Entwickelt von Hashim Acra in Spielberg, Österreich.
+              Kleines Studio, eigene Apps, direkter Support.
+            </p>
           </div>
-          <div class="steps">
-            <article class="step">
-              <h3 data-i18n="s1t">1. Halle betreten</h3>
-              <p data-i18n="s1d">Vom Startbildschirm geht’s in die Arcade-Halle. Such dir einen Automaten — oder nimm den Lift zum Shop oder in den Club.</p>
-            </article>
-            <article class="step">
-              <h3 data-i18n="s2t">2. Spielen</h3>
-              <p data-i18n="s2d">Classic, Cole the Mole, AirHockey, SynthRacing-Club, Claw Zone, Nail It, Ruuun! oder Kawashite Ute — und im Club das Tanzspiel.</p>
-            </article>
-            <article class="step">
-              <h3 data-i18n="s3t">3. Shop und Sammlung</h3>
-              <p data-i18n="s3d">Merch ansehen, Glücksrad drehen, Mini-Autos und Preise aus der Claw Zone mitnehmen.</p>
-            </article>
-            <article class="step">
-              <h3 data-i18n="s4t">4. Weiterkommen</h3>
-              <p data-i18n="s4d">Ränge steigern, Skins und Musik freischalten — alles bleibt lokal auf dem Gerät.</p>
-            </article>
-          </div>
-
-          <div class="support-banner">
-            <p data-i18n="supportBanner">Fragen zu Käufen, „Käufe wiederherstellen“ oder technischen Problemen?</p>
-            <a class="btn btn-primary" href="./support.html" data-i18n="supportLink">Support und Hilfe</a>
+          <div class="studio-meta">
+            <a class="btn btn-secondary" href="./impressum.html">Impressum</a>
+            <a class="btn btn-secondary" href="mailto:acra.hashim@gmail.com">Kontakt</a>
           </div>
         </div>
       </section>
@@ -230,18 +159,19 @@
 
     <footer class="site-footer">
       <div class="container footer-grid">
-        <p>© <span id="year"></span> R-K8</p>
+        <p>© <span id="year"></span> aCRAZY Game Studio</p>
         <nav aria-label="Rechtliches">
-          <a href="./support.html" data-i18n="supportNav">Support</a>
-          <a href="./impressum.html" data-i18n="imprint">Impressum</a>
-          <a href="./datenschutz.html" data-i18n="privacy">Datenschutz</a>
-          <a href="./privacy-policy.html" data-i18n="privacyApp">App-Datenschutz</a>
-          <a href="./barrierefreiheit.html" data-i18n="access">Barrierefreiheit</a>
+          <a href="./support.html">Support</a>
+          <a href="./impressum.html">Impressum</a>
+          <a href="./datenschutz.html">Datenschutz</a>
+          <a href="./privacy-policy.html">R-K8 Datenschutz</a>
+          <a href="./privacy-blattgeist.html">Blattgeist Datenschutz</a>
+          <a href="./barrierefreiheit.html">Barrierefreiheit</a>
         </nav>
       </div>
     </footer>
-    <script src="./locale-packs.js"></script>
-    <script src="./marketing-i18n.js"></script>
-    <script src="./app.js"></script>
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
   </body>
 </html>
