@@ -12,6 +12,8 @@
   --leaf-soft: rgba(196, 165, 116, 0.18);
   --arcade: #3ec7ff;
   --arcade-soft: rgba(62, 199, 255, 0.14);
+  --oops: #2f9e57;
+  --oops-soft: rgba(47, 158, 87, 0.18);
   --focus: #ffe8a3;
   --font-display: "Syne", "Avenir Next", system-ui, sans-serif;
   --font-body: "Outfit", "Avenir Next", system-ui, sans-serif;
@@ -401,6 +403,20 @@ body {
     radial-gradient(circle at 40% 30%, rgba(196, 165, 116, 0.4), transparent 50%),
     radial-gradient(circle at 70% 80%, rgba(90, 120, 70, 0.25), transparent 45%),
     linear-gradient(160deg, #16120e, #0e1210 75%);
+}
+
+.app-feature-visual--oops {
+  background:
+    radial-gradient(circle at 35% 25%, rgba(47, 158, 87, 0.45), transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(244, 245, 243, 0.12), transparent 40%),
+    linear-gradient(160deg, #0f1612, #121a14 75%);
+}
+
+.app-feature-visual--oops .visual-label {
+  color: #6fd48f;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 400;
 }
 
 .visual-label {
